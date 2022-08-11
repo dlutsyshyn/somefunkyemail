@@ -110,6 +110,10 @@
             width: 25%;
         }
 
+        .pt-4 {
+            padding-top: 20px;
+        }
+
         .middle-all {
             text-align: center;
         }
@@ -137,6 +141,130 @@
             padding-bottom: 12px;
             padding-right: 8px;
             font-size: 15px;
+        }
+
+        .activity-block-side {
+            width: 213px;
+            background: #FAFAFA;
+        }
+
+        .activity-block-center {
+            width: 213px;
+            background: #FAFAFA;
+            border-right: 10px solid #FFFFFF;
+            border-left: 10px solid #FFFFFF;
+        }
+
+        .activity-block-top-text {
+            color: #A1A1AA;
+            font-size: 12px;
+            font-weight: 600;
+            margin-top: 10px;
+            text-transform: uppercase;
+            margin-left: 5px;
+            margin-bottom: 8px;
+        }
+
+        .activity-block-center-text {
+            color: #52525B;
+            font-size: 36px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+            margin-left: 5px;
+            font-weight: 600;
+        }
+
+        .activity-block-bottom-text {
+            color: #52525B;
+            font-size: 12px;
+            font-weight: 500;
+            margin-top: 8px;
+            margin-left: 5px;
+        }
+
+        .quote-text {
+            color: #52525B;
+            font-size: 14px;
+            margin-bottom: 3px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .quote-subtext {
+            color: #A1A1AA;
+            font-size: 10.5px;
+            margin-top: 3px;
+            margin-bottom: 16px;
+        }
+
+        .qoute-chart-section {
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        .chart-desktop {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .chart-mobile {
+            display: none !important;
+        }
+
+        .activity-block-heading {
+            color: #52525B;
+            font-size: 12px;
+            font-weight: 600;
+            margin-left: 5px;
+            margin-top: 8px;
+            margin-bottom: 2px;
+            text-transform: uppercase;
+        }
+
+        .activity-block-subheading {
+            color: #71717A;
+            font-size: 10px;
+            font-weight: 400;
+            margin-left: 5px;
+            margin-top: 2px;
+        }
+
+        .success-stat-block {
+            background-color: #F5FDF9;
+        }
+
+        .success-stat-heading {
+            color: #059669;
+            font-weight: 600;
+            font-size: 12px;
+            margin-bottom: 2px;
+            margin-left: 12px;
+            margin-top: 12px;
+        }
+
+        .stat-block-subtext {
+            color: #71717A;
+            font-size: 10px;
+            margin-top: 2px;
+        }
+
+        .failure-stat-block {
+            background-color: #FEF9F9;
+        }
+
+        /* Media */
+
+        @media (max-width: 600px) {
+            .chart-desktop {
+                display: none !important;
+            }
+
+            .chart-mobile {
+                display: block !important;
+                width: 100%;
+                margin: 0 auto;
+            }
         }
     </style>
 
@@ -184,25 +312,118 @@
                         </td>
                     </tr>
                     <!-- Блок разделенный на три -->
-                    <tr>
+                    <tr class="col-12">
                         <td>
                             <div>
-                                <table style="border-spacing: 10px;">
+                                <table>
                                     <tr>
-                                        <td style="width: 213px; background: #FAFAFA; ">
-                                            <p style="color: #A1A1AA; font-size: 12px; font-weight: 600; margin-top: 10px; text-transform: uppercase; margin-left: 5px; margin-bottom: 8px;" class="">Avg. Session Duration</p>
-                                            <p style="color: #52525B; font-size: 36px; margin-top: 8px; margin-bottom: 8px; margin-left: 5px; font-weight: 600;">2.4 K</p>
-                                            <p style="color: #52525B; font-size: 12px; font-weight: 500; margin-top: 8px; margin-left: 5px;"><img style="margin-right: 4px;"src="/assets/icon-success.png" alt="icon-top"><span>32% more</span> than week before</p>
+                                        <td class="activity-block-side">
+                                            <p class="activity-block-top-text">Avg. Session Duration</p>
+                                            <p class="activity-block-center-text"><span>2.4 K</span></p>
+                                            <p class="activity-block-bottom-text">
+                                                <img style="margin-right: 4px;" src="/assets/icon-success.png" alt="icon-top">
+                                                <span>32% more</span>
+                                                than week before
+                                            </p>
                                         </td>
-                                        <td style="width: 213px; background: #FAFAFA; border-right: 10px solid #FFFFFF; border-left: 10px solid #FFFFFF;">
-                                            <p style="color: #A1A1AA; font-size: 12px; font-weight: 600; margin-top: 10px; text-transform: uppercase; margin-left: 5px; margin-bottom: 8px;" class="">Avg. Session Duration</p>
-                                            <p style="color: #52525B; font-size: 36px; margin-top: 8px; margin-bottom: 8px; margin-left: 5px; font-weight: 600;">2.4 K</p>
-                                            <p style="color: #52525B; font-size: 12px; font-weight: 500; margin-top: 8px; margin-left: 5px;"><img style="margin-right: 4px;"src="/assets/icon-success.png" alt="icon-top"><span>32% more</span> than week before</p>
+                                        <td class="activity-block-center">
+                                            <p class="activity-block-top-text">Active Users</p>
+                                            <p class="activity-block-center-text"><span>54</span></p>
+                                            <p class="activity-block-bottom-text">
+                                                <img style="margin-right: 4px;" src="/assets/icon-success.png" alt="icon-top">
+                                                <span>2 more</span>
+                                                than week before
+                                            </p>
                                         </td>
-                                        <td style="width: 213px; background: #FAFAFA; ">
-                                            <p style="color: #A1A1AA; font-size: 12px; font-weight: 600; margin-top: 10px; text-transform: uppercase; margin-left: 5px; margin-bottom: 8px;" class="">Avg. Session Duration</p>
-                                            <p style="color: #52525B; font-size: 36px; margin-top: 8px; margin-bottom: 8px; margin-left: 5px; font-weight: 600;">2.4 K</p>
-                                            <p style="color: #52525B; font-size: 12px; font-weight: 500; margin-top: 8px; margin-left: 5px;"><img style="margin-right: 4px;"src="/assets/icon-success.png" alt="icon-top"><span>32% more</span> than week before</p>
+                                        <td class="activity-block-side">
+                                            <p class="activity-block-top-text">avg. Practicing Hours</p>
+                                            <p class="activity-block-center-text"><span>237 h</span></p>
+                                            <p class="activity-block-bottom-text">
+                                                <img style="margin-right: 4px;" src="/assets/icon-failure.png" alt="icon-top">
+                                                <span>23% less</span>
+                                                than week before
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- Блок с текстом и графиком (график редерим на БЕКе) -->
+                    <tr class="col-12">
+                        <td>
+                            <p class="quote-text">
+                                avg. Practicing Hours per day
+                            </p>
+                            <p class="quote-subtext">
+                                Average amount of practicing hours per day based on all users
+                            </p>
+                            <p class="qoute-chart-section">
+                                <img class="chart-desktop" src="/assets/chart-desktop.png" alt="chart-desktop">
+                                <img class="chart-mobile" src="/assets/chart-mobile.png" alt="chart-mobile">
+                            </p>
+                        </td>
+                    </tr>
+                    <!-- Заголовок второго раздела -->
+                    <tr class="col-12">
+                        <td>
+                            <h3 class="report-sub-heading">Activity</h3>
+                        </td>
+                    </tr>
+                    <!-- Второй раздел с тремя блоками в ряд -->
+                    <tr class="col-12">
+                        <td>
+                            <div>
+                                <table>
+                                    <tr>
+                                        <td class="activity-block-side">
+                                            <p class="activity-block-heading">Engagement</p>
+                                            <p class="activity-block-subheading">Percentage of team with active views, reactions, and streaks</p>
+                                            <p class="activity-block-center-text"><span>64</span>%</p>
+                                            <p class="activity-block-bottom-text">
+                                                <img style="margin-right: 4px;" src="/assets/icon-success.png" alt="icon-top">
+                                                <span>8% more</span>
+                                                than week before
+                                            </p>
+                                        </td>
+                                        <td class="activity-block-center">
+                                            <p class="activity-block-heading">Practice</p>
+                                           <p class="activity-block-subheading">Percentage of correct answers from team members</p>
+                                            <p class="activity-block-center-text"><span>55</span>%</p>
+                                            <p class="activity-block-bottom-text">
+                                                <img style="margin-right: 4px;" src="/assets/icon-success.png" alt="icon-top">
+                                                <span>6% more</span>
+                                                than week before
+                                            </p>
+                                        </td>
+                                        <td class="activity-block-side">
+                                            <p class="activity-block-heading">Test</p>
+                                            <p class="activity-block-subheading">Percentage of successfully passed tests from the entire team</p>
+                                            <p class="activity-block-center-text"><span>24</span>%</p>
+                                            <p class="activity-block-bottom-text">
+                                                <img style="margin-right: 4px;" src="/assets/icon-failure.png" alt="icon-top">
+                                                <span>3% less</span>
+                                                than week before
+                                            </p>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="col-12">
+                                        <td>
+                                            <div class="pt-4">
+                                                <table>
+                                                    <tr>
+                                                        <td class="success-stat-block">
+                                                            <h4 class="stat-block-heading">Top active locations</h4>
+                                                            <p>Percentage of views, reactions, daily streaks by entire team</p>
+                                                        </td>
+                                                        <td class="failure-stat-block">
+                                                            <h4>Top active locations</h4>
+                                                            <p>Percentage of views, reactions, daily streaks by entire team</p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
                                         </td>
                                     </tr>
                                 </table>
