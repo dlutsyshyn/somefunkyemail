@@ -46,8 +46,8 @@
         }
 
         table {
-            border-spacing: 0 !important;
-            border-collapse: collapse !important;
+            /* border-spacing: 0 !important; */
+            /* border-collapse: collapse !important; */
             table-layout: auto !important;
             margin: 0 auto !important;
         }
@@ -232,6 +232,12 @@
 
         .success-stat-block {
             background-color: #F5FDF9;
+            width: 320px;
+        }
+
+        .failure-stat-block {
+            background-color: #FEF9F9;
+            width: 320px;
         }
 
         .success-stat-heading {
@@ -243,16 +249,29 @@
             margin-top: 12px;
         }
 
+        .failure-stat-heading {
+            color: #EF4444;
+            font-weight: 600;
+            font-size: 12px;
+            margin-bottom: 2px;
+            margin-left: 12px;
+            margin-top: 12px;
+        }
+
         .stat-block-subtext {
             color: #71717A;
             font-size: 10px;
             margin-top: 2px;
+            margin-left: 12px;
+
         }
 
-        .failure-stat-block {
-            background-color: #FEF9F9;
-        }
+        /* funky classes - modifiers */
 
+        .rigth-bottom-border {
+            border-right: 8px solid #FFFFFF;
+        }
+        
         /* Media */
 
         @media (max-width: 600px) {
@@ -276,7 +295,7 @@
         <div style="max-width: 700px; margin: 0 auto;" class="wrapper">
             <!-- Тело письма -->
             <div class="content-wrapper">
-                <table cellspacing="0" cellpadding="0" width="100%" style="margin: auto;">
+                <table cellspacing="0" cellpadding="0" width="100%" style="border-collapse: collapse !important; border-spacing: 0 !important; margin: auto;">
                     <!-- Лого компании -->
                     <tr class="middle-all">
                         <td valign="middle" class="col-12" style="padding-top: 10px; padding-bottom: 4px;">
@@ -315,7 +334,7 @@
                     <tr class="col-12">
                         <td>
                             <div>
-                                <table>
+                                <table style="border-collapse: collapse !important; border-spacing: 0 !important;">
                                     <tr>
                                         <td class="activity-block-side">
                                             <p class="activity-block-top-text">Avg. Session Duration</p>
@@ -374,7 +393,7 @@
                     <tr class="col-12">
                         <td>
                             <div>
-                                <table>
+                                <table style="border-collapse: collapse !important; border-spacing: 0 !important;">
                                     <tr>
                                         <td class="activity-block-side">
                                             <p class="activity-block-heading">Engagement</p>
@@ -388,7 +407,7 @@
                                         </td>
                                         <td class="activity-block-center">
                                             <p class="activity-block-heading">Practice</p>
-                                           <p class="activity-block-subheading">Percentage of correct answers from team members</p>
+                                            <p class="activity-block-subheading">Percentage of correct answers from team members</p>
                                             <p class="activity-block-center-text"><span>55</span>%</p>
                                             <p class="activity-block-bottom-text">
                                                 <img style="margin-right: 4px;" src="/assets/icon-success.png" alt="icon-top">
@@ -407,23 +426,23 @@
                                             </p>
                                         </td>
                                     </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
 
-                                    <tr class="col-12">
-                                        <td>
-                                            <div class="pt-4">
-                                                <table>
-                                                    <tr>
-                                                        <td class="success-stat-block">
-                                                            <h4 class="stat-block-heading">Top active locations</h4>
-                                                            <p>Percentage of views, reactions, daily streaks by entire team</p>
-                                                        </td>
-                                                        <td class="failure-stat-block">
-                                                            <h4>Top active locations</h4>
-                                                            <p>Percentage of views, reactions, daily streaks by entire team</p>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </div>
+                    <tr class="col-12">
+                        <td>
+                            <div class="pt-4">
+                                <table style="border-collapse: collapse !important; border-spacing: 0 !important;">
+                                    <tr>
+                                        <td class="success-stat-block rigth-bottom-border">
+                                            <h4 class="success-stat-heading">Top active locations</h4>
+                                            <p class="stat-block-subtext">Percentage of views, reactions, daily streaks by entire team</p>
+                                        </td>
+                                        <td class="failure-stat-block">
+                                            <h4 class="failure-stat-heading">Top active locations</h4>
+                                            <p class="stat-block-subtext">Percentage of views, reactions, daily streaks by entire team</p>
                                         </td>
                                     </tr>
                                 </table>
