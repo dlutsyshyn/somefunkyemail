@@ -110,6 +110,15 @@
             width: 25%;
         }
 
+        .mv-3 {
+            margin-bottom: 14px;
+            margin-top: 17.5px;
+        }
+
+        .mt-1 {
+            padding-top: 9px;
+        }
+
         .pt-4 {
             padding-top: 20px;
         }
@@ -251,6 +260,7 @@
             margin-bottom: 2px;
             margin-left: 12px;
             margin-top: 12px;
+            text-transform: uppercase;
         }
 
         .failure-stat-heading {
@@ -260,6 +270,7 @@
             margin-bottom: 2px;
             margin-left: 12px;
             margin-top: 1px;
+            text-transform: uppercase;
         }
 
         .stat-block-subtext {
@@ -323,10 +334,6 @@
             margin-right: 3.3px;
         }
 
-        .user-rating-block {
-            width: 33.3% !important;
-        }
-
         .user-rating-photo {
             vertical-align: bottom;
             padding: 12px;
@@ -358,18 +365,102 @@
             text-align: center;
             font-weight: 600;
             margin-top: -2px;
-            margin-bottom: 2px;
+            margin-bottom: -2px;
+        }
+
+        .user-spec-label {
+            margin-top: -2px;
+            margin-bottom: -2px;
+
         }
 
         .user-spec-label-purple {
             margin-top: -2px;
             margin-bottom: -2px;
             font-size: 10px;
-            padding: 5px;
+            padding: 6px;
+            padding-top: 3px;
+            padding-bottom: 3px;
             background-color: #F5F3FF;
             border-radius: 3px;
             color: #8B5CF6;
+            font-weight: 500;
+        }
 
+        .user-spec-label-orange {
+            margin-top: -2px;
+            margin-bottom: -2px;
+            font-size: 10px;
+            padding: 6px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            background-color: #FFF1E6;
+            border-radius: 3px;
+            color: #FF9B4D;
+            font-weight: 500;
+        }
+
+        .user-spec-label-blue {
+            margin-top: -2px;
+            margin-bottom: -2px;
+            font-size: 10px;
+            padding: 6px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            background-color: #EFF6FF;
+            border-radius: 3px;
+            color: #3B82F6;
+            font-weight: 500;
+        }
+
+        .user-spec-label-cyan {
+            margin-top: -2px;
+            margin-bottom: -2px;
+            font-size: 10px;
+            padding: 6px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            background-color: #ECFDF5;
+            border-radius: 3px;
+            color: #34D399;
+            font-weight: 500;
+        }
+
+        .user-rating-points-score {
+            color: #52525B;
+            font-size: 16px;
+            margin-top: 5px;
+            margin-bottom: 2px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .user-rating-points-persentage {
+            color: #A1A1AA;
+            text-align: center;
+            margin-top: 3px;
+            margin-bottom: 5px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .user-stats-avatar {
+            margin-left: 12px;
+        }
+
+        .user-stats-name {
+            margin-top: 0;
+            margin-bottom: 3px;
+            color: #3F3F46;
+            font-size: 12px;
+            font-weight: 600;
+            margin-left: 5px;
+        }
+
+        .user-stats-spec {
+            margin-top: 0;
+            margin-bottom: 3px;
+            margin-left: 5px;
         }
 
         /* funky classes - modifiers */
@@ -725,8 +816,8 @@
                                 <table style="border-collapse: collapse !important; border-spacing: 0 !important;">
                                     <tr>
                                         <td class="success-stat-block rigth-bottom-border">
-                                            <h4 class="success-stat-heading">Top active locations</h4>
-                                            <p class="stat-block-subtext">Percentage of views, reactions, daily streaks by entire team</p>
+                                            <h4 class="success-stat-heading">Top active users</h4>
+                                            <p class="stat-block-subtext">Points based on their results and engagement</p>
 
                                             <div>
                                                 <table style="border-collapse: collapse !important; border-spacing: 0 !important;">
@@ -746,13 +837,13 @@
                                                                     </tr>
                                                                     <tr>
                                                                         <td class="user-rating-spec">
-                                                                            <p class="user-spec-label-purple"><span>waiter</span></p>
+                                                                            <p class="user-spec-label"><span class="user-spec-label-purple">waiter</span></p>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td class="user-rating-points">
-                                                                            <p>512</p>
-                                                                            <p><img src="assets/icon-success.png" alt="icon-success"><span>12</span>%</p>
+                                                                            <p class="user-rating-points-score">512</p>
+                                                                            <p class="user-rating-points-persentage"><img class="small-icon-success" src="assets/icon-success.png" alt="icon-success"><span>12</span>%</p>
                                                                         </td>
                                                                     </tr>
                                                                 </table>
@@ -768,18 +859,18 @@
                                                                     </tr>
                                                                     <tr>
                                                                         <td class="user-rating-name">
-                                                                            <p class="user-name-rating"><span>Dolores Chesterton</span></p>
+                                                                            <p class="user-name-rating"><span>Richard Johnson</span></p>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td class="user-rating-spec">
-                                                                            <p class="user-spec-label"><span>waiter</span></p>
+                                                                            <p class="user-spec-label"><span class="user-spec-label-orange">manager</span></p>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td class="user-rating-points">
-                                                                            <p>512</p>
-                                                                            <p><img src="assets/icon-success.png" alt="icon-success"><span>12</span>%</p>
+                                                                            <p class="user-rating-points-score">568</p>
+                                                                            <p class="user-rating-points-persentage"><img class="small-icon-success" src="assets/icon-success.png" alt="icon-success"><span>16</span>%</p>
                                                                         </td>
                                                                     </tr>
                                                                 </table>
@@ -795,18 +886,18 @@
                                                                     </tr>
                                                                     <tr>
                                                                         <td class="user-rating-name">
-                                                                            <p class="user-name-rating"><span>Dolores Chesterton</span></p>
+                                                                            <p class="user-name-rating"><span>Jeremiah Birch</span></p>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td class="user-rating-spec">
-                                                                            <p class="user-spec-label"><span>waiter</span></p>
+                                                                            <p class="user-spec-label"><span class="user-spec-label-blue">bartender</span></p>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td class="user-rating-points">
-                                                                            <p>512</p>
-                                                                            <p><img src="assets/icon-success.png" alt="icon-success"><span>12</span>%</p>
+                                                                            <p class="user-rating-points-score">499</p>
+                                                                            <p class="user-rating-points-persentage"><img class="small-icon-success" src="assets/icon-success.png" alt="icon-success"><span>12</span>%</p>
                                                                         </td>
                                                                     </tr>
                                                                 </table>
@@ -817,117 +908,133 @@
                                                 </table>
                                             </div>
 
-                                            <div style="margin-bottom: 3px;">
+                                            <div style="margin-bottom: 7px; margin-top: 15px;">
                                                 <table style="border-collapse: collapse !important; border-spacing: 0 !important; width: 100%;">
                                                     <tr>
-                                                        <td style="width: 50%;">
-                                                            <p class="location-heading">Sunny Cafe-Bar</p>
-                                                            <p class="location-email"><a class="location-email-link" href="mailto:tailor.little@gmail.com">tailor.little@gmail.com</a></p>
-                                                            <p class="location-phone"><a class="location-phone-link" href="tel:+15361231212">+1 536 123 1212</a></p>
+                                                        <td style="width: 17%; vertical-align: middle;">
+                                                            <img class="user-stats-avatar" src="assets/avatars/user-avatar-1.png" alt="user-avatar">
                                                         </td>
-                                                        <td style="width: 50%;">
-                                                            <p class="location-stat-main-percentage"><span>67</span>%</p>
-                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success" src="assets/icon-success.png" alt="icon-success"><span>4</span>%</p>
+                                                        <td style="width: 70%;">
+                                                            <p class="user-stats-name">Richard Johnson</p>
+                                                            <p class="user-stats-spec"><span class="user-spec-label-orange">manager</span></p>
+                                                        </td>
+                                                        <td style="width: 13%;">
+                                                            <p class="location-stat-main-percentage"><span>368</span></p>
+                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success" src="assets/icon-failure.png" alt="icon-success"><span>2</span>%</p>
                                                         </td>
                                                     </tr>
                                                 </table>
                                             </div>
 
-                                            <div style="margin-bottom: 3px;">
+                                            <div style="margin-bottom: 5px;">
                                                 <table style="border-collapse: collapse !important; border-spacing: 0 !important; width: 100%;">
                                                     <tr>
-                                                        <td style="width: 50%;">
-                                                            <p class="location-heading">8th Ave Bar</p>
-                                                            <p class="location-email"><a class="location-email-link" href="mailto:tailor.little@gmail.com">tailor.little@gmail.com</a></p>
-                                                            <p class="location-phone"><a class="location-phone-link" href="tel:+15361231212">+1 536 123 1212</a></p>
+                                                        <td style="width: 17%; vertical-align: middle;">
+                                                            <img class="user-stats-avatar" src="assets/avatars/user-avatar-2.png" alt="user-avatar">
                                                         </td>
-                                                        <td style="width: 50%;">
-                                                            <p class="location-stat-main-percentage"><span>54</span>%</p>
+                                                        <td style="width: 70%;">
+                                                            <p class="user-stats-name">John Callen</p>
+                                                            <p class="user-stats-spec"><span class="user-spec-label-blue">cool pizza man</span></p>
+                                                        </td>
+                                                        <td style="width: 13%;">
+                                                            <p class="location-stat-main-percentage"><span>344</span></p>
                                                             <p class="location-stat-sub-percentage"><img class="small-icon-success" src="assets/icon-failure.png" alt="icon-success"><span>1</span>%</p>
                                                         </td>
                                                     </tr>
                                                 </table>
                                             </div>
+
                                         </td>
+
                                         <td class="failure-stat-block">
-                                            <h4 class="failure-stat-heading">Less active locations</h4>
+                                            <h4 class="failure-stat-heading mt-1">Less active locations</h4>
                                             <p class="stat-block-subtext">Percentage of views, reactions, daily streaks by entire team</p>
 
-                                            <div style="margin-bottom: 3px;">
+                                            <div class="mv-3">
                                                 <table style="border-collapse: collapse !important; border-spacing: 0 !important; width: 100%;">
                                                     <tr>
-                                                        <td style="width: 50%;">
-                                                            <p class="location-heading">Huntsville</p>
-                                                            <p class="location-email"><a class="location-email-link" href="mailto:tailor.little@gmail.com">tailor.little@gmail.com</a></p>
-                                                            <p class="location-phone"><a class="location-phone-link" href="tel:+15361231212">+1 536 123 1212</a></p>
+                                                        <td style="width: 17%; vertical-align: middle;">
+                                                            <img class="user-stats-avatar" src="assets/avatars/user-avatar-1.png" alt="user-avatar">
                                                         </td>
-                                                        <td style="width: 50%;">
-                                                            <p class="location-stat-main-percentage"><span>94</span>%</p>
-                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success" src="assets/icon-success.png" alt="icon-success"><span>12</span>%</p>
+                                                        <td style="width: 70%;">
+                                                            <p class="user-stats-name">Richard Johnson</p>
+                                                            <p class="user-stats-spec"><span class="user-spec-label-orange">manager</span></p>
+                                                        </td>
+                                                        <td style="width: 13%;">
+                                                            <p class="location-stat-main-percentage"><span>46</span></p>
+                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success" src="assets/icon-failure.png" alt="icon-success"><span>2</span>%</p>
                                                         </td>
                                                     </tr>
                                                 </table>
                                             </div>
 
-                                            <div style="margin-bottom: 3px;">
+                                            <div class="mv-3">
                                                 <table style="border-collapse: collapse !important; border-spacing: 0 !important; width: 100%;">
                                                     <tr>
-                                                        <td style="width: 50%;">
-                                                            <p class="location-heading">Montgomery</p>
-                                                            <p class="location-email"><a class="location-email-link" href="mailto:tailor.little@gmail.com">tailor.little@gmail.com</a></p>
-                                                            <p class="location-phone"><a class="location-phone-link" href="tel:+15361231212">+1 536 123 1212</a></p>
+                                                        <td style="width: 17%; vertical-align: middle;">
+                                                            <img class="user-stats-avatar" src="assets/avatars/user-avatar-2.png" alt="user-avatar">
                                                         </td>
-                                                        <td style="width: 50%;">
-                                                            <p class="location-stat-main-percentage"><span>87</span>%</p>
-                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success" src="assets/icon-success.png" alt="icon-success"><span>6</span>%</p>
+                                                        <td style="width: 70%;">
+                                                            <p class="user-stats-name">John Callen</p>
+                                                            <p class="user-stats-spec"><span class="user-spec-label-blue">cool pizza man</span></p>
+                                                        </td>
+                                                        <td style="width: 13%;">
+                                                            <p class="location-stat-main-percentage"><span>45</span></p>
+                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success" src="assets/icon-success.png" alt="icon-success"><span>1</span>%</p>
                                                         </td>
                                                     </tr>
                                                 </table>
                                             </div>
 
-                                            <div style="margin-bottom: 3px;">
+                                            <div class="mv-3">
                                                 <table style="border-collapse: collapse !important; border-spacing: 0 !important; width: 100%;">
                                                     <tr>
-                                                        <td style="width: 50%;">
-                                                            <p class="location-heading">Star Burger</p>
-                                                            <p class="location-email"><a class="location-email-link" href="mailto:tailor.little@gmail.com">tailor.little@gmail.com</a></p>
-                                                            <p class="location-phone"><a class="location-phone-link" href="tel:+15361231212">+1 536 123 1212</a></p>
+                                                        <td style="width: 17%; vertical-align: middle;">
+                                                            <img class="user-stats-avatar" src="assets/avatars/user-avatar-3.png" alt="user-avatar">
                                                         </td>
-                                                        <td style="width: 50%;">
-                                                            <p class="location-stat-main-percentage"><span>68</span>%</p>
-                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success" src="assets/icon-failure.png" alt="icon-success"><span>6</span>%</p>
+                                                        <td style="width: 70%;">
+                                                            <p class="user-stats-name">Jeremiah Birch</p>
+                                                            <p class="user-stats-spec"><span class="user-spec-label-cyan">delivery man</span></p>
                                                         </td>
-                                                    </tr>
-                                                </table>
-                                            </div>
-
-                                            <div style="margin-bottom: 3px;">
-                                                <table style="border-collapse: collapse !important; border-spacing: 0 !important; width: 100%;">
-                                                    <tr>
-                                                        <td style="width: 50%;">
-                                                            <p class="location-heading">Sunny Cafe-Bar</p>
-                                                            <p class="location-email"><a class="location-email-link" href="mailto:tailor.little@gmail.com">tailor.little@gmail.com</a></p>
-                                                            <p class="location-phone"><a class="location-phone-link" href="tel:+15361231212">+1 536 123 1212</a></p>
-                                                        </td>
-                                                        <td style="width: 50%;">
-                                                            <p class="location-stat-main-percentage"><span>67</span>%</p>
-                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success" src="assets/icon-success.png" alt="icon-success"><span>4</span>%</p>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </div>
-
-                                            <div style="margin-bottom: 3px;">
-                                                <table style="border-collapse: collapse !important; border-spacing: 0 !important; width: 100%;">
-                                                    <tr>
-                                                        <td style="width: 50%;">
-                                                            <p class="location-heading">8th Ave Bar</p>
-                                                            <p class="location-email"><a class="location-email-link" href="mailto:tailor.little@gmail.com">tailor.little@gmail.com</a></p>
-                                                            <p class="location-phone"><a class="location-phone-link" href="tel:+15361231212">+1 536 123 1212</a></p>
-                                                        </td>
-                                                        <td style="width: 50%;">
-                                                            <p class="location-stat-main-percentage"><span>54</span>%</p>
+                                                        <td style="width: 13%;">
+                                                            <p class="location-stat-main-percentage"><span>32</span></p>
                                                             <p class="location-stat-sub-percentage"><img class="small-icon-success" src="assets/icon-failure.png" alt="icon-success"><span>1</span>%</p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                            <div class="mv-3">
+                                                <table style="border-collapse: collapse !important; border-spacing: 0 !important; width: 100%;">
+                                                    <tr>
+                                                        <td style="width: 17%; vertical-align: middle;">
+                                                            <img class="user-stats-avatar" src="assets/avatars/user-avatar-2.png" alt="user-avatar">
+                                                        </td>
+                                                        <td style="width: 70%;">
+                                                            <p class="user-stats-name">John Callen</p>
+                                                            <p class="user-stats-spec"><span class="user-spec-label-blue">bartender</span></p>
+                                                        </td>
+                                                        <td style="width: 13%;">
+                                                            <p class="location-stat-main-percentage"><span>31</span></p>
+                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success" src="assets/icon-failure.png" alt="icon-success"><span>1</span>%</p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                            <div class="mv-3">
+                                                <table style="border-collapse: collapse !important; border-spacing: 0 !important; width: 100%;">
+                                                    <tr>
+                                                        <td style="width: 17%; vertical-align: middle;">
+                                                            <img class="user-stats-avatar" src="assets/avatars/user-avatar-1.png" alt="user-avatar">
+                                                        </td>
+                                                        <td style="width: 70%;">
+                                                            <p class="user-stats-name">Richard Johnson</p>
+                                                            <p class="user-stats-spec"><span class="user-spec-label-blue">waiter</span></p>
+                                                        </td>
+                                                        <td style="width: 13%;">
+                                                            <p class="location-stat-main-percentage"><span>12</span></p>
+                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success" src="assets/icon-success.png" alt="icon-success"><span>1</span>%</p>
                                                         </td>
                                                     </tr>
                                                 </table>
