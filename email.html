@@ -469,10 +469,10 @@
 
         .dashed-table-cell {
             border: 2px dashed #D4D4D8;
-            padding-top: 15px;
+            padding-top: 8px;
             padding-left: 12px;
             padding-right: 12px;
-            padding-bottom: 13px;
+            padding-bottom: 12px;
         }
 
         .cell-icon {
@@ -485,10 +485,13 @@
             font-size: 12px;
             font-weight: 600;
             margin-top: 0px;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
             text-transform: uppercase;
+            width: 170px;
+            margin-left: auto;
+            margin-right: auto;
         }
-        
+
         .small-cell-icon {
             width: 20px;
             height: 20px;
@@ -499,7 +502,38 @@
             font-size: 10px;
             font-weight: 500;
             text-align: center;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
 
+        .cell-question-link {
+            width: 100%;
+            background: #FAFAFA;
+            text-align: center;
+            padding: 8px;
+            border-radius: 2px;
+            margin-top: 2px;
+            margin-bottom: 0;
+        }
+
+        .cell-question-link-text {
+            text-decoration: underline;
+            color: #52525B !important;
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        .main-link {
+            text-decoration: none;
+            padding-top: 15px;
+            padding-left: 35px;
+            padding-bottom: 15px;
+            padding-right: 35px;
+            color: #FFFFFF;
+            background-color: #34D399;
+            font-size: 16px;
+            font-weight: 700;
+            border-radius: 30px;
         }
 
         /* funky classes - modifiers */
@@ -507,6 +541,10 @@
         .rigth-bottom-border {
             border-right: 8px solid #FFFFFF;
             padding-bottom: 12px;
+        }
+
+        .tight-heading-cell {
+            width: 80px !important;
         }
 
         /* Media */
@@ -668,7 +706,7 @@
                             </div>
                         </td>
                     </tr>
-
+                    <!-- Раздел с локациями -->
                     <tr class="col-12">
                         <td>
                             <div class="pt-4">
@@ -878,7 +916,7 @@
                             </div>
                         </td>
                     </tr>
-
+                    <!-- Раздел с пользователями -->
                     <tr class="col-12">
                         <td>
                             <div class="pt-2">
@@ -1131,14 +1169,13 @@
                             </div>
                         </td>
                     </tr>
-
-                    <!-- Заголовок второго раздела -->
+                    <!-- Заголовок третьего раздела -->
                     <tr class="col-12">
                         <td>
                             <h3 class="report-sub-heading">Hightlights</h3>
                         </td>
                     </tr>
-
+                    <!-- Табличка Хайлайтс (6 ячеек) -->
                     <tr class="col-12">
                         <td>
                             <table class="dashed-table" style="border-collapse: collapse !important; border-spacing: 0 !important;">
@@ -1147,34 +1184,40 @@
                                         <div>
                                             <table>
                                                 <tr>
-                                                    <td style="text-align: center;"><img class="cell-icon" src="assets/additional/star-icon.png" alt="start-icon"></td>
+                                                    <td class="middle-all"><img class="cell-icon" src="assets/additional/star-icon.png"
+                                                            alt="start-icon"></td>
                                                 </tr>
                                                 <tr>
-                                                    <td style="text-align: center;">
-                                                        <p class="table-cell-heading">Top Rated Post</p>
+                                                    <td class="middle-all">
+                                                        <p class="table-cell-heading tight-heading-cell">Top Rated Post</p>
                                                     </td>
                                                 </tr>
 
                                                 <tr>
-                                                    <td style="text-align: center;">
+                                                    <td class="middle-all">
                                                         <div>
-                                                            <table style="margin: 0 auto; border-collapse: collapse !important; border-spacing: 0 !important;">
+                                                            <table
+                                                                style="margin: 0 auto; border-collapse: collapse !important; border-spacing: 0 !important;">
                                                                 <tr>
-                                                                    <td style="text-align: center;">
-                                                                        <img class="small-cell-icon" src="assets/additional/view-icon.png" alt="view-icon">
+                                                                    <td style="text-align: center; padding-right: 7px; display: none !important;">
+                                                                        <img class="small-cell-icon" src="assets/additional/view-icon.png"
+                                                                            alt="view-icon">
                                                                         <p class="cell-info-amnount">349</p>
                                                                     </td>
-                                                                    <td style="text-align: center;">
-                                                                        <img class="small-cell-icon" src="assets/additional/like-icon.png" alt="like-icon">
-                                                                        <p class="cell-info-amnount">349</p>
+                                                                    <td style="text-align: center; padding-right: 7px;">
+                                                                        <img class="small-cell-icon" src="assets/additional/like-icon.png"
+                                                                            alt="like-icon">
+                                                                        <p class="cell-info-amnount">143</p>
                                                                     </td>
-                                                                    <td style="text-align: center;">
-                                                                        <img class="small-cell-icon" src="assets/additional/dislike-icon.png" alt="dislike-icon">
-                                                                        <p class="cell-info-amnount">349</p>
+                                                                    <td style="text-align: center; padding-right: 7px;">
+                                                                        <img class="small-cell-icon" src="assets/additional/dislike-icon.png"
+                                                                            alt="dislike-icon">
+                                                                        <p class="cell-info-amnount">2</p>
                                                                     </td>
-                                                                    <td style="text-align: center;">
-                                                                        <img class="small-cell-icon" src="assets/additional/comment-icon.png" alt="comment-icon">
-                                                                        <p class="cell-info-amnount">349</p>
+                                                                    <td style="text-align: center; padding-right: 0px;">
+                                                                        <img class="small-cell-icon" src="assets/additional/comment-icon.png"
+                                                                            alt="comment-icon">
+                                                                        <p class="cell-info-amnount">12</p>
                                                                     </td>
                                                                 </tr>
                                                             </table>
@@ -1183,9 +1226,9 @@
                                                 </tr>
                                                 <tr>
                                                     <td>
-                                                        <span>
-                                                            Restaurant Atmosphere and its influence
-                                                        </span>
+                                                        <p class="cell-question-link">
+                                                            <a class="cell-question-link-text" href="#">Restaurant Atmosphere and its influence</a>
+                                                        </p>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -1195,34 +1238,40 @@
                                         <div>
                                             <table>
                                                 <tr>
-                                                    <td><img class="cell-icon" src="assets/additional/star-icon.png" alt="start-icon"></td>
+                                                    <td class="middle-all"><img class="cell-icon" src="assets/additional/star-icon.png"
+                                                            alt="start-icon"></td>
                                                 </tr>
                                                 <tr>
-                                                    <td>
-                                                        <p>Top Rated Post</p>
+                                                    <td class="middle-all">
+                                                        <p class="table-cell-heading tight-heading-cell">Top Rated Post</p>
                                                     </td>
                                                 </tr>
 
                                                 <tr>
-                                                    <td>
+                                                    <td class="middle-all">
                                                         <div>
-                                                            <table>
+                                                            <table
+                                                                style="margin: 0 auto; border-collapse: collapse !important; border-spacing: 0 !important;">
                                                                 <tr>
-                                                                    <td>
-                                                                        <img src="assets/additional/view-icon.png" alt="view-icon">
+                                                                    <td style="text-align: center; padding-right: 7px; display: none !important;">
+                                                                        <img class="small-cell-icon" src="assets/additional/view-icon.png"
+                                                                            alt="view-icon">
                                                                         <p class="cell-info-amnount">349</p>
                                                                     </td>
-                                                                    <td>
-                                                                        <img src="assets/additional/like-icon.png" alt="like-icon">
-                                                                        <p class="cell-info-amnount">349</p>
+                                                                    <td style="text-align: center; padding-right: 7px;">
+                                                                        <img class="small-cell-icon" src="assets/additional/like-icon.png"
+                                                                            alt="like-icon">
+                                                                        <p class="cell-info-amnount">143</p>
                                                                     </td>
-                                                                    <td>
-                                                                        <img src="assets/additional/dislike-icon.png" alt="dislike-icon">
-                                                                        <p class="cell-info-amnount">349</p>
+                                                                    <td style="text-align: center; padding-right: 7px;">
+                                                                        <img class="small-cell-icon" src="assets/additional/dislike-icon.png"
+                                                                            alt="dislike-icon">
+                                                                        <p class="cell-info-amnount">2</p>
                                                                     </td>
-                                                                    <td>
-                                                                        <img src="assets/additional/comment-icon.png" alt="comment-icon">
-                                                                        <p class="cell-info-amnount">349</p>
+                                                                    <td style="text-align: center; padding-right: 0px;">
+                                                                        <img class="small-cell-icon" src="assets/additional/comment-icon.png"
+                                                                            alt="comment-icon">
+                                                                        <p class="cell-info-amnount">12</p>
                                                                     </td>
                                                                 </tr>
                                                             </table>
@@ -1231,9 +1280,9 @@
                                                 </tr>
                                                 <tr>
                                                     <td>
-                                                        <span>
-                                                            Restaurant Atmosphere and its influence
-                                                        </span>
+                                                        <p class="cell-question-link">
+                                                            <a class="cell-question-link-text" href="#">Restaurant Atmosphere and its influence</a>
+                                                        </p>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -1243,34 +1292,40 @@
                                         <div>
                                             <table>
                                                 <tr>
-                                                    <td><img class="cell-icon" src="assets/additional/star-icon.png" alt="start-icon"></td>
+                                                    <td class="middle-all"><img class="cell-icon" src="assets/additional/star-icon.png"
+                                                            alt="start-icon"></td>
                                                 </tr>
                                                 <tr>
-                                                    <td>
-                                                        <p>Top Rated Post</p>
+                                                    <td class="middle-all">
+                                                        <p class="table-cell-heading tight-heading-cell">Top Rated Post</p>
                                                     </td>
                                                 </tr>
 
                                                 <tr>
-                                                    <td>
+                                                    <td class="middle-all">
                                                         <div>
-                                                            <table>
+                                                            <table
+                                                                style="margin: 0 auto; border-collapse: collapse !important; border-spacing: 0 !important;">
                                                                 <tr>
-                                                                    <td>
-                                                                        <img src="assets/additional/view-icon.png" alt="view-icon">
+                                                                    <td style="text-align: center; padding-right: 7px; display: none !important;">
+                                                                        <img class="small-cell-icon" src="assets/additional/view-icon.png"
+                                                                            alt="view-icon">
                                                                         <p class="cell-info-amnount">349</p>
                                                                     </td>
-                                                                    <td>
-                                                                        <img src="assets/additional/like-icon.png" alt="like-icon">
-                                                                        <p class="cell-info-amnount">349</p>
+                                                                    <td style="text-align: center; padding-right: 7px;">
+                                                                        <img class="small-cell-icon" src="assets/additional/like-icon.png"
+                                                                            alt="like-icon">
+                                                                        <p class="cell-info-amnount">143</p>
                                                                     </td>
-                                                                    <td>
-                                                                        <img src="assets/additional/dislike-icon.png" alt="dislike-icon">
-                                                                        <p class="cell-info-amnount">349</p>
+                                                                    <td style="text-align: center; padding-right: 7px;">
+                                                                        <img class="small-cell-icon" src="assets/additional/dislike-icon.png"
+                                                                            alt="dislike-icon">
+                                                                        <p class="cell-info-amnount">2</p>
                                                                     </td>
-                                                                    <td>
-                                                                        <img src="assets/additional/comment-icon.png" alt="comment-icon">
-                                                                        <p class="cell-info-amnount">349</p>
+                                                                    <td style="text-align: center; padding-right: 0px;">
+                                                                        <img class="small-cell-icon" src="assets/additional/comment-icon.png"
+                                                                            alt="comment-icon">
+                                                                        <p class="cell-info-amnount">12</p>
                                                                     </td>
                                                                 </tr>
                                                             </table>
@@ -1279,9 +1334,9 @@
                                                 </tr>
                                                 <tr>
                                                     <td>
-                                                        <span>
-                                                            Restaurant Atmosphere and its influence
-                                                        </span>
+                                                        <p class="cell-question-link">
+                                                            <a class="cell-question-link-text" href="#">Restaurant Atmosphere and its influence</a>
+                                                        </p>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -1294,34 +1349,40 @@
                                         <div>
                                             <table>
                                                 <tr>
-                                                    <td><img class="cell-icon" src="assets/additional/star-icon.png" alt="start-icon"></td>
+                                                    <td class="middle-all"><img class="cell-icon" src="assets/additional/star-icon.png"
+                                                            alt="start-icon"></td>
                                                 </tr>
                                                 <tr>
-                                                    <td>
-                                                        <p>Top Rated Post</p>
+                                                    <td class="middle-all">
+                                                        <p class="table-cell-heading tight-heading-cell">Top Rated Post</p>
                                                     </td>
                                                 </tr>
 
                                                 <tr>
-                                                    <td>
+                                                    <td class="middle-all">
                                                         <div>
-                                                            <table>
+                                                            <table
+                                                                style="margin: 0 auto; border-collapse: collapse !important; border-spacing: 0 !important;">
                                                                 <tr>
-                                                                    <td>
-                                                                        <img src="assets/additional/view-icon.png" alt="view-icon">
+                                                                    <td style="text-align: center; padding-right: 7px; display: none !important;">
+                                                                        <img class="small-cell-icon" src="assets/additional/view-icon.png"
+                                                                            alt="view-icon">
                                                                         <p class="cell-info-amnount">349</p>
                                                                     </td>
-                                                                    <td>
-                                                                        <img src="assets/additional/like-icon.png" alt="like-icon">
-                                                                        <p class="cell-info-amnount">349</p>
+                                                                    <td style="text-align: center; padding-right: 7px;">
+                                                                        <img class="small-cell-icon" src="assets/additional/like-icon.png"
+                                                                            alt="like-icon">
+                                                                        <p class="cell-info-amnount">143</p>
                                                                     </td>
-                                                                    <td>
-                                                                        <img src="assets/additional/dislike-icon.png" alt="dislike-icon">
-                                                                        <p class="cell-info-amnount">349</p>
+                                                                    <td style="text-align: center; padding-right: 7px;">
+                                                                        <img class="small-cell-icon" src="assets/additional/dislike-icon.png"
+                                                                            alt="dislike-icon">
+                                                                        <p class="cell-info-amnount">2</p>
                                                                     </td>
-                                                                    <td>
-                                                                        <img src="assets/additional/comment-icon.png" alt="comment-icon">
-                                                                        <p class="cell-info-amnount">349</p>
+                                                                    <td style="text-align: center; padding-right: 0px;">
+                                                                        <img class="small-cell-icon" src="assets/additional/comment-icon.png"
+                                                                            alt="comment-icon">
+                                                                        <p class="cell-info-amnount">12</p>
                                                                     </td>
                                                                 </tr>
                                                             </table>
@@ -1330,9 +1391,9 @@
                                                 </tr>
                                                 <tr>
                                                     <td>
-                                                        <span>
-                                                            Restaurant Atmosphere and its influence
-                                                        </span>
+                                                        <p class="cell-question-link">
+                                                            <a class="cell-question-link-text" href="#">Restaurant Atmosphere and its influence</a>
+                                                        </p>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -1342,34 +1403,40 @@
                                         <div>
                                             <table>
                                                 <tr>
-                                                    <td><img class="cell-icon" src="assets/additional/star-icon.png" alt="start-icon"></td>
+                                                    <td class="middle-all"><img class="cell-icon" src="assets/additional/star-icon.png"
+                                                            alt="start-icon"></td>
                                                 </tr>
                                                 <tr>
-                                                    <td>
-                                                        <p>Top Rated Post</p>
+                                                    <td class="middle-all">
+                                                        <p class="table-cell-heading tight-heading-cell">Top Rated Post</p>
                                                     </td>
                                                 </tr>
 
                                                 <tr>
-                                                    <td>
+                                                    <td class="middle-all">
                                                         <div>
-                                                            <table>
+                                                            <table
+                                                                style="margin: 0 auto; border-collapse: collapse !important; border-spacing: 0 !important;">
                                                                 <tr>
-                                                                    <td>
-                                                                        <img src="assets/additional/view-icon.png" alt="view-icon">
+                                                                    <td style="text-align: center; padding-right: 7px; display: none !important;">
+                                                                        <img class="small-cell-icon" src="assets/additional/view-icon.png"
+                                                                            alt="view-icon">
                                                                         <p class="cell-info-amnount">349</p>
                                                                     </td>
-                                                                    <td>
-                                                                        <img src="assets/additional/like-icon.png" alt="like-icon">
-                                                                        <p class="cell-info-amnount">349</p>
+                                                                    <td style="text-align: center; padding-right: 7px;">
+                                                                        <img class="small-cell-icon" src="assets/additional/like-icon.png"
+                                                                            alt="like-icon">
+                                                                        <p class="cell-info-amnount">143</p>
                                                                     </td>
-                                                                    <td>
-                                                                        <img src="assets/additional/dislike-icon.png" alt="dislike-icon">
-                                                                        <p class="cell-info-amnount">349</p>
+                                                                    <td style="text-align: center; padding-right: 7px;">
+                                                                        <img class="small-cell-icon" src="assets/additional/dislike-icon.png"
+                                                                            alt="dislike-icon">
+                                                                        <p class="cell-info-amnount">2</p>
                                                                     </td>
-                                                                    <td>
-                                                                        <img src="assets/additional/comment-icon.png" alt="comment-icon">
-                                                                        <p class="cell-info-amnount">349</p>
+                                                                    <td style="text-align: center; padding-right: 0px;">
+                                                                        <img class="small-cell-icon" src="assets/additional/comment-icon.png"
+                                                                            alt="comment-icon">
+                                                                        <p class="cell-info-amnount">12</p>
                                                                     </td>
                                                                 </tr>
                                                             </table>
@@ -1378,9 +1445,9 @@
                                                 </tr>
                                                 <tr>
                                                     <td>
-                                                        <span>
-                                                            Restaurant Atmosphere and its influence
-                                                        </span>
+                                                        <p class="cell-question-link">
+                                                            <a class="cell-question-link-text" href="#">Restaurant Atmosphere and its influence</a>
+                                                        </p>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -1390,34 +1457,40 @@
                                         <div>
                                             <table>
                                                 <tr>
-                                                    <td><img class="cell-icon" src="assets/additional/star-icon.png" alt="start-icon"></td>
+                                                    <td class="middle-all"><img class="cell-icon" src="assets/additional/star-icon.png"
+                                                            alt="start-icon"></td>
                                                 </tr>
                                                 <tr>
-                                                    <td>
-                                                        <p>Top Rated Post</p>
+                                                    <td class="middle-all">
+                                                        <p class="table-cell-heading tight-heading-cell">Top Rated Post</p>
                                                     </td>
                                                 </tr>
 
                                                 <tr>
-                                                    <td>
+                                                    <td class="middle-all">
                                                         <div>
-                                                            <table>
+                                                            <table
+                                                                style="margin: 0 auto; border-collapse: collapse !important; border-spacing: 0 !important;">
                                                                 <tr>
-                                                                    <td>
-                                                                        <img src="assets/additional/view-icon.png" alt="view-icon">
+                                                                    <td style="text-align: center; padding-right: 7px; display: none !important;">
+                                                                        <img class="small-cell-icon" src="assets/additional/view-icon.png"
+                                                                            alt="view-icon">
                                                                         <p class="cell-info-amnount">349</p>
                                                                     </td>
-                                                                    <td>
-                                                                        <img src="assets/additional/like-icon.png" alt="like-icon">
-                                                                        <p class="cell-info-amnount">349</p>
+                                                                    <td style="text-align: center; padding-right: 7px;">
+                                                                        <img class="small-cell-icon" src="assets/additional/like-icon.png"
+                                                                            alt="like-icon">
+                                                                        <p class="cell-info-amnount">143</p>
                                                                     </td>
-                                                                    <td>
-                                                                        <img src="assets/additional/dislike-icon.png" alt="dislike-icon">
-                                                                        <p class="cell-info-amnount">349</p>
+                                                                    <td style="text-align: center; padding-right: 7px;">
+                                                                        <img class="small-cell-icon" src="assets/additional/dislike-icon.png"
+                                                                            alt="dislike-icon">
+                                                                        <p class="cell-info-amnount">2</p>
                                                                     </td>
-                                                                    <td>
-                                                                        <img src="assets/additional/comment-icon.png" alt="comment-icon">
-                                                                        <p class="cell-info-amnount">349</p>
+                                                                    <td style="text-align: center; padding-right: 0px;">
+                                                                        <img class="small-cell-icon" src="assets/additional/comment-icon.png"
+                                                                            alt="comment-icon">
+                                                                        <p class="cell-info-amnount">12</p>
                                                                     </td>
                                                                 </tr>
                                                             </table>
@@ -1426,9 +1499,9 @@
                                                 </tr>
                                                 <tr>
                                                     <td>
-                                                        <span>
-                                                            Restaurant Atmosphere and its influence
-                                                        </span>
+                                                        <p class="cell-question-link">
+                                                            <a class="cell-question-link-text" href="#">Restaurant Atmosphere and its influence</a>
+                                                        </p>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -1438,7 +1511,13 @@
                             </table>
                         </td>
                     </tr>
-
+                    <!--  -->
+                    <tr class="col-12">
+                        <td style="text-align: center; padding-top: 35px;">
+                            <a class="main-link" href="#">Go to Dashboard</a>
+                        </td>
+                    </tr>
+                    <!-- Конец таблицы  -->
                 </table>
             </div>
         </div>
