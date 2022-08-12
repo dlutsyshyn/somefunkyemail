@@ -49,7 +49,7 @@
             /* border-spacing: 0 !important; */
             /* border-collapse: collapse !important; */
             table-layout: auto !important;
-            margin: 0 auto !important;
+            /* margin: 0 auto !important; */
         }
 
         img {
@@ -112,6 +112,10 @@
 
         .pt-4 {
             padding-top: 20px;
+        }
+
+        .pt-2 {
+            padding-top: 8px;
         }
 
         .middle-all {
@@ -255,7 +259,7 @@
             font-size: 12px;
             margin-bottom: 2px;
             margin-left: 12px;
-            margin-top: 12px;
+            margin-top: 1px;
         }
 
         .stat-block-subtext {
@@ -263,15 +267,74 @@
             font-size: 10px;
             margin-top: 2px;
             margin-left: 12px;
+            margin-bottom: 7px;
+        }
 
+        .location-heading {
+            color: #000000;
+            font-size: 14px;
+            margin-left: 12px;
+            margin-bottom: 0;
+            font-weight: 500;
+            margin-top: 3px;
+        }
+
+        .location-email,
+        .location-phone {
+            line-height: 12px;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: 400;
+        }
+
+        .location-email-link,
+        .location-phone-link {
+            text-decoration: none !important;
+            color: #71717A;
+            margin-left: 12px;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: 400;
+            font-size: 12px;
+        }
+
+        .location-stat-main-percentage {
+            color: #52525B;
+            font-weight: 600;
+            font-size: 16px;
+            text-align: right;
+            margin-top: 3px;
+            margin-bottom: 4px;
+            margin-right: 8px;
+        }
+
+        .location-stat-sub-percentage {
+            color: #A1A1AA;
+            font-weight: 500;
+            font-size: 12px;
+            text-align: right;
+            margin-top: 4px;
+            margin-bottom: 0;
+            margin-right: 8px;
+        }
+
+        .small-icon-success {
+            width: 10px;
+            margin-right: 3.3px;
+        }
+
+        .user-rating-block {
+            text-align: center !important;
+            width: 33.3% !important;
         }
 
         /* funky classes - modifiers */
 
         .rigth-bottom-border {
             border-right: 8px solid #FFFFFF;
+            padding-bottom: 12px;
         }
-        
+
         /* Media */
 
         @media (max-width: 600px) {
@@ -295,7 +358,8 @@
         <div style="max-width: 700px; margin: 0 auto;" class="wrapper">
             <!-- Тело письма -->
             <div class="content-wrapper">
-                <table cellspacing="0" cellpadding="0" width="100%" style="border-collapse: collapse !important; border-spacing: 0 !important; margin: auto;">
+                <table cellspacing="0" cellpadding="0" width="100%"
+                    style="border-collapse: collapse !important; border-spacing: 0 !important; margin: 0 auto;">
                     <!-- Лого компании -->
                     <tr class="middle-all">
                         <td valign="middle" class="col-12" style="padding-top: 10px; padding-bottom: 4px;">
@@ -334,7 +398,7 @@
                     <tr class="col-12">
                         <td>
                             <div>
-                                <table style="border-collapse: collapse !important; border-spacing: 0 !important;">
+                                <table style="border-collapse: collapse !important; border-spacing: 0 !important; margin: 0 auto;">
                                     <tr>
                                         <td class="activity-block-side">
                                             <p class="activity-block-top-text">Avg. Session Duration</p>
@@ -378,8 +442,8 @@
                                 Average amount of practicing hours per day based on all users
                             </p>
                             <p class="qoute-chart-section">
-                                <img class="chart-desktop" src="/assets/chart-desktop.png" alt="chart-desktop">
-                                <img class="chart-mobile" src="/assets/chart-mobile.png" alt="chart-mobile">
+                                <img class="chart-desktop" src="/assets/charts/chart-desktop.png" alt="chart-desktop">
+                                <img class="chart-mobile" src="/assets/charts/chart-mobile.png" alt="chart-mobile">
                             </p>
                         </td>
                     </tr>
@@ -393,7 +457,7 @@
                     <tr class="col-12">
                         <td>
                             <div>
-                                <table style="border-collapse: collapse !important; border-spacing: 0 !important;">
+                                <table style="border-collapse: collapse !important; border-spacing: 0 !important; margin: 0 auto;">
                                     <tr>
                                         <td class="activity-block-side">
                                             <p class="activity-block-heading">Engagement</p>
@@ -439,10 +503,337 @@
                                         <td class="success-stat-block rigth-bottom-border">
                                             <h4 class="success-stat-heading">Top active locations</h4>
                                             <p class="stat-block-subtext">Percentage of views, reactions, daily streaks by entire team</p>
+
+                                            <div style="margin-bottom: 3px;">
+                                                <table style="border-collapse: collapse !important; border-spacing: 0 !important; width: 100%;">
+                                                    <tr>
+                                                        <td style="width: 50%;">
+                                                            <p class="location-heading">Huntsville</p>
+                                                            <p class="location-email"><a class="location-email-link" href="mailto:tailor.little@gmail.com">tailor.little@gmail.com</a></p>
+                                                            <p class="location-phone"><a class="location-phone-link" href="tel:+15361231212">+1 536 123 1212</a></p>
+                                                        </td>
+                                                        <td style="width: 50%;">
+                                                            <p class="location-stat-main-percentage"><span>94</span>%</p>
+                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success" src="/assets/icon-success.png" alt="icon-success"><span>12</span>%</p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                            <div style="margin-bottom: 3px;">
+                                                <table style="border-collapse: collapse !important; border-spacing: 0 !important; width: 100%;">
+                                                    <tr>
+                                                        <td style="width: 50%;">
+                                                            <p class="location-heading">Montgomery</p>
+                                                            <p class="location-email"><a class="location-email-link" href="mailto:tailor.little@gmail.com">tailor.little@gmail.com</a></p>
+                                                            <p class="location-phone"><a class="location-phone-link" href="tel:+15361231212">+1 536 123 1212</a></p>
+                                                        </td>
+                                                        <td style="width: 50%;">
+                                                            <p class="location-stat-main-percentage"><span>87</span>%</p>
+                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success" src="/assets/icon-success.png" alt="icon-success"><span>6</span>%</p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                            <div style="margin-bottom: 3px;">
+                                                <table style="border-collapse: collapse !important; border-spacing: 0 !important; width: 100%;">
+                                                    <tr>
+                                                        <td style="width: 50%;">
+                                                            <p class="location-heading">Star Burger</p>
+                                                            <p class="location-email"><a class="location-email-link" href="mailto:tailor.little@gmail.com">tailor.little@gmail.com</a></p>
+                                                            <p class="location-phone"><a class="location-phone-link" href="tel:+15361231212">+1 536 123 1212</a></p>
+                                                        </td>
+                                                        <td style="width: 50%;">
+                                                            <p class="location-stat-main-percentage"><span>68</span>%</p>
+                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success" src="/assets/icon-failure.png" alt="icon-success"><span>6</span>%</p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                            <div style="margin-bottom: 3px;">
+                                                <table style="border-collapse: collapse !important; border-spacing: 0 !important; width: 100%;">
+                                                    <tr>
+                                                        <td style="width: 50%;">
+                                                            <p class="location-heading">Sunny Cafe-Bar</p>
+                                                            <p class="location-email"><a class="location-email-link" href="mailto:tailor.little@gmail.com">tailor.little@gmail.com</a></p>
+                                                            <p class="location-phone"><a class="location-phone-link" href="tel:+15361231212">+1 536 123 1212</a></p>
+                                                        </td>
+                                                        <td style="width: 50%;">
+                                                            <p class="location-stat-main-percentage"><span>67</span>%</p>
+                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success" src="/assets/icon-success.png" alt="icon-success"><span>4</span>%</p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                            <div style="margin-bottom: 3px;">
+                                                <table style="border-collapse: collapse !important; border-spacing: 0 !important; width: 100%;">
+                                                    <tr>
+                                                        <td style="width: 50%;">
+                                                            <p class="location-heading">8th Ave Bar</p>
+                                                            <p class="location-email"><a class="location-email-link" href="mailto:tailor.little@gmail.com">tailor.little@gmail.com</a></p>
+                                                            <p class="location-phone"><a class="location-phone-link" href="tel:+15361231212">+1 536 123 1212</a></p>
+                                                        </td>
+                                                        <td style="width: 50%;">
+                                                            <p class="location-stat-main-percentage"><span>54</span>%</p>
+                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success" src="/assets/icon-failure.png" alt="icon-success"><span>1</span>%</p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
                                         </td>
                                         <td class="failure-stat-block">
-                                            <h4 class="failure-stat-heading">Top active locations</h4>
+                                            <h4 class="failure-stat-heading">Less active locations</h4>
                                             <p class="stat-block-subtext">Percentage of views, reactions, daily streaks by entire team</p>
+
+                                            <div style="margin-bottom: 3px;">
+                                                <table style="border-collapse: collapse !important; border-spacing: 0 !important; width: 100%;">
+                                                    <tr>
+                                                        <td style="width: 50%;">
+                                                            <p class="location-heading">Huntsville</p>
+                                                            <p class="location-email"><a class="location-email-link" href="mailto:tailor.little@gmail.com">tailor.little@gmail.com</a></p>
+                                                            <p class="location-phone"><a class="location-phone-link" href="tel:+15361231212">+1 536 123 1212</a></p>
+                                                        </td>
+                                                        <td style="width: 50%;">
+                                                            <p class="location-stat-main-percentage"><span>94</span>%</p>
+                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success" src="/assets/icon-success.png" alt="icon-success"><span>12</span>%</p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                            <div style="margin-bottom: 3px;">
+                                                <table style="border-collapse: collapse !important; border-spacing: 0 !important; width: 100%;">
+                                                    <tr>
+                                                        <td style="width: 50%;">
+                                                            <p class="location-heading">Montgomery</p>
+                                                            <p class="location-email"><a class="location-email-link" href="mailto:tailor.little@gmail.com">tailor.little@gmail.com</a></p>
+                                                            <p class="location-phone"><a class="location-phone-link" href="tel:+15361231212">+1 536 123 1212</a></p>
+                                                        </td>
+                                                        <td style="width: 50%;">
+                                                            <p class="location-stat-main-percentage"><span>87</span>%</p>
+                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success" src="/assets/icon-success.png" alt="icon-success"><span>6</span>%</p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                            <div style="margin-bottom: 3px;">
+                                                <table style="border-collapse: collapse !important; border-spacing: 0 !important; width: 100%;">
+                                                    <tr>
+                                                        <td style="width: 50%;">
+                                                            <p class="location-heading">Star Burger</p>
+                                                            <p class="location-email"><a class="location-email-link" href="mailto:tailor.little@gmail.com">tailor.little@gmail.com</a></p>
+                                                            <p class="location-phone"><a class="location-phone-link" href="tel:+15361231212">+1 536 123 1212</a></p>
+                                                        </td>
+                                                        <td style="width: 50%;">
+                                                            <p class="location-stat-main-percentage"><span>68</span>%</p>
+                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success" src="/assets/icon-failure.png" alt="icon-success"><span>6</span>%</p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                            <div style="margin-bottom: 3px;">
+                                                <table style="border-collapse: collapse !important; border-spacing: 0 !important; width: 100%;">
+                                                    <tr>
+                                                        <td style="width: 50%;">
+                                                            <p class="location-heading">Sunny Cafe-Bar</p>
+                                                            <p class="location-email"><a class="location-email-link" href="mailto:tailor.little@gmail.com">tailor.little@gmail.com</a></p>
+                                                            <p class="location-phone"><a class="location-phone-link" href="tel:+15361231212">+1 536 123 1212</a></p>
+                                                        </td>
+                                                        <td style="width: 50%;">
+                                                            <p class="location-stat-main-percentage"><span>67</span>%</p>
+                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success" src="/assets/icon-success.png" alt="icon-success"><span>4</span>%</p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                            <div style="margin-bottom: 3px;">
+                                                <table style="border-collapse: collapse !important; border-spacing: 0 !important; width: 100%;">
+                                                    <tr>
+                                                        <td style="width: 50%;">
+                                                            <p class="location-heading">8th Ave Bar</p>
+                                                            <p class="location-email"><a class="location-email-link" href="mailto:tailor.little@gmail.com">tailor.little@gmail.com</a></p>
+                                                            <p class="location-phone"><a class="location-phone-link" href="tel:+15361231212">+1 536 123 1212</a></p>
+                                                        </td>
+                                                        <td style="width: 50%;">
+                                                            <p class="location-stat-main-percentage"><span>54</span>%</p>
+                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success" src="/assets/icon-failure.png" alt="icon-success"><span>1</span>%</p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="col-12">
+                        <td>
+                            <div class="pt-2">
+                                <table style="border-collapse: collapse !important; border-spacing: 0 !important;">
+                                    <tr>
+                                        <td class="success-stat-block rigth-bottom-border">
+                                            <h4 class="success-stat-heading">Top active locations</h4>
+                                            <p class="stat-block-subtext">Percentage of views, reactions, daily streaks by entire team</p>
+
+                                            <div>
+                                                <table style="border-collapse: collapse !important; border-spacing: 0 !important;">
+                                                    <tr>
+                                                        <td style="width: 33.3%;">
+                                                            <div>
+                                                                <table>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <img src="/assets/photos/user-rating-1.png" alt="user-1">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <p><span>Dolores Chesterton</span></p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <p><span>waiter</span></p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <p>512</p>
+                                                                            <p><img src="/assets/icon-success.png" alt="icon-success"><span>12</span>%</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                            <div style="margin-bottom: 3px;">
+                                                <table style="border-collapse: collapse !important; border-spacing: 0 !important; width: 100%;">
+                                                    <tr>
+                                                        <td style="width: 50%;">
+                                                            <p class="location-heading">Sunny Cafe-Bar</p>
+                                                            <p class="location-email"><a class="location-email-link" href="mailto:tailor.little@gmail.com">tailor.little@gmail.com</a></p>
+                                                            <p class="location-phone"><a class="location-phone-link" href="tel:+15361231212">+1 536 123 1212</a></p>
+                                                        </td>
+                                                        <td style="width: 50%;">
+                                                            <p class="location-stat-main-percentage"><span>67</span>%</p>
+                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success" src="/assets/icon-success.png" alt="icon-success"><span>4</span>%</p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                            <div style="margin-bottom: 3px;">
+                                                <table style="border-collapse: collapse !important; border-spacing: 0 !important; width: 100%;">
+                                                    <tr>
+                                                        <td style="width: 50%;">
+                                                            <p class="location-heading">8th Ave Bar</p>
+                                                            <p class="location-email"><a class="location-email-link" href="mailto:tailor.little@gmail.com">tailor.little@gmail.com</a></p>
+                                                            <p class="location-phone"><a class="location-phone-link" href="tel:+15361231212">+1 536 123 1212</a></p>
+                                                        </td>
+                                                        <td style="width: 50%;">
+                                                            <p class="location-stat-main-percentage"><span>54</span>%</p>
+                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success" src="/assets/icon-failure.png" alt="icon-success"><span>1</span>%</p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </td>
+                                        <td class="failure-stat-block">
+                                            <h4 class="failure-stat-heading">Less active locations</h4>
+                                            <p class="stat-block-subtext">Percentage of views, reactions, daily streaks by entire team</p>
+
+                                            <div style="margin-bottom: 3px;">
+                                                <table style="border-collapse: collapse !important; border-spacing: 0 !important; width: 100%;">
+                                                    <tr>
+                                                        <td style="width: 50%;">
+                                                            <p class="location-heading">Huntsville</p>
+                                                            <p class="location-email"><a class="location-email-link" href="mailto:tailor.little@gmail.com">tailor.little@gmail.com</a></p>
+                                                            <p class="location-phone"><a class="location-phone-link" href="tel:+15361231212">+1 536 123 1212</a></p>
+                                                        </td>
+                                                        <td style="width: 50%;">
+                                                            <p class="location-stat-main-percentage"><span>94</span>%</p>
+                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success" src="/assets/icon-success.png" alt="icon-success"><span>12</span>%</p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                            <div style="margin-bottom: 3px;">
+                                                <table style="border-collapse: collapse !important; border-spacing: 0 !important; width: 100%;">
+                                                    <tr>
+                                                        <td style="width: 50%;">
+                                                            <p class="location-heading">Montgomery</p>
+                                                            <p class="location-email"><a class="location-email-link" href="mailto:tailor.little@gmail.com">tailor.little@gmail.com</a></p>
+                                                            <p class="location-phone"><a class="location-phone-link" href="tel:+15361231212">+1 536 123 1212</a></p>
+                                                        </td>
+                                                        <td style="width: 50%;">
+                                                            <p class="location-stat-main-percentage"><span>87</span>%</p>
+                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success" src="/assets/icon-success.png" alt="icon-success"><span>6</span>%</p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                            <div style="margin-bottom: 3px;">
+                                                <table style="border-collapse: collapse !important; border-spacing: 0 !important; width: 100%;">
+                                                    <tr>
+                                                        <td style="width: 50%;">
+                                                            <p class="location-heading">Star Burger</p>
+                                                            <p class="location-email"><a class="location-email-link" href="mailto:tailor.little@gmail.com">tailor.little@gmail.com</a></p>
+                                                            <p class="location-phone"><a class="location-phone-link" href="tel:+15361231212">+1 536 123 1212</a></p>
+                                                        </td>
+                                                        <td style="width: 50%;">
+                                                            <p class="location-stat-main-percentage"><span>68</span>%</p>
+                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success" src="/assets/icon-failure.png" alt="icon-success"><span>6</span>%</p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                            <div style="margin-bottom: 3px;">
+                                                <table style="border-collapse: collapse !important; border-spacing: 0 !important; width: 100%;">
+                                                    <tr>
+                                                        <td style="width: 50%;">
+                                                            <p class="location-heading">Sunny Cafe-Bar</p>
+                                                            <p class="location-email"><a class="location-email-link" href="mailto:tailor.little@gmail.com">tailor.little@gmail.com</a></p>
+                                                            <p class="location-phone"><a class="location-phone-link" href="tel:+15361231212">+1 536 123 1212</a></p>
+                                                        </td>
+                                                        <td style="width: 50%;">
+                                                            <p class="location-stat-main-percentage"><span>67</span>%</p>
+                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success" src="/assets/icon-success.png" alt="icon-success"><span>4</span>%</p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                            <div style="margin-bottom: 3px;">
+                                                <table style="border-collapse: collapse !important; border-spacing: 0 !important; width: 100%;">
+                                                    <tr>
+                                                        <td style="width: 50%;">
+                                                            <p class="location-heading">8th Ave Bar</p>
+                                                            <p class="location-email"><a class="location-email-link" href="mailto:tailor.little@gmail.com">tailor.little@gmail.com</a></p>
+                                                            <p class="location-phone"><a class="location-phone-link" href="tel:+15361231212">+1 536 123 1212</a></p>
+                                                        </td>
+                                                        <td style="width: 50%;">
+                                                            <p class="location-stat-main-percentage"><span>54</span>%</p>
+                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success" src="/assets/icon-failure.png" alt="icon-success"><span>1</span>%</p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
                                         </td>
                                     </tr>
                                 </table>
