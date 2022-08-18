@@ -249,6 +249,7 @@
             font-weight: 400;
             margin-left: 5px;
             margin-top: 2px;
+            margin-bottom: 0;
         }
 
         .success-stat-block {
@@ -656,6 +657,10 @@
             }
 
             /* modifiers */
+            .center-on-mob {
+                text-align: center;
+            }
+
             .left-of-three {
                 border-right: none;
                 border-bottom: 8px solid #FFFFFF;
@@ -689,8 +694,7 @@
         <div class="wrapper">
             <!-- Тело письма -->
             <div class="content-wrapper">
-                <table cellspacing="0" cellpadding="0" width="100%"
-                    style="border-collapse: collapse !important; border-spacing: 0 !important; margin: 0 auto;">
+                <table cellspacing="0" cellpadding="0" width="100%" style="border-collapse: collapse !important; border-spacing: 0 !important; margin: 0 auto;">
                     <!-- Лого компании -->
                     <tr class="middle-all">
                         <td valign="middle" class="col-12" style="padding-top: 10px; padding-bottom: 4px;">
@@ -731,7 +735,7 @@
                             <table class="three">
                                 <tr>
                                     <td class="activity-block-side one left-of-three">
-                                        <table class="col-12">
+                                        <table class="col-12 center-on-mob">
                                             <tr>
                                                 <td>
                                                     <p class="activity-block-top-text">Avg. Session Duration</p>
@@ -754,7 +758,7 @@
                                         </table>
                                     </td>
                                     <td class="activity-block-side one centered-of-three">
-                                        <table class="col-12">
+                                        <table class="col-12 center-on-mob">
                                             <tr>
                                                 <td>
                                                     <p class="activity-block-top-text">Active Users</p>
@@ -777,7 +781,7 @@
                                         </table>
                                     </td>
                                     <td class="activity-block-side one right-of-three">
-                                        <table class="col-12">
+                                        <table class="col-12 center-on-mob">
                                             <tr>
                                                 <td>
                                                     <p class="activity-block-top-text">avg. Practicing Hours</p>
@@ -827,44 +831,85 @@
                     <!-- Второй раздел с тремя блоками в ряд -->
                     <tr class="col-12">
                         <td>
-                            <div>
-                                <table style="border-collapse: collapse !important; border-spacing: 0 !important; margin: 0 auto;">
-                                    <tr>
-                                        <td class="activity-block-side">
-                                            <p class="activity-block-heading">Engagement</p>
-                                            <p class="activity-block-subheading">Percentage of team with active views, reactions, and streaks</p>
-                                            <p class="activity-block-center-text"><span>64</span>%</p>
-                                            <p class="activity-block-bottom-text">
-                                                <img style="margin-right: 4px;" src="assets/icon-success.png" alt="icon-top">
-                                                <span>8% more</span>
-                                                than week before
-                                            </p>
-                                        </td>
-                                        <td class="activity-block-center">
-                                            <p class="activity-block-heading">Practice</p>
-                                            <p class="activity-block-subheading">Percentage of correct answers from team members</p>
-                                            <p class="activity-block-center-text"><span>55</span>%</p>
-                                            <p class="activity-block-bottom-text">
-                                                <img style="margin-right: 4px;" src="assets/icon-success.png" alt="icon-top">
-                                                <span>6% more</span>
-                                                than week before
-                                            </p>
-                                        </td>
-                                        <td class="activity-block-side">
-                                            <p class="activity-block-heading">Test</p>
-                                            <p class="activity-block-subheading">Percentage of successfully passed tests from the entire team</p>
-                                            <p class="activity-block-center-text"><span>24</span>%</p>
-                                            <p class="activity-block-bottom-text">
-                                                <img style="margin-right: 4px;" src="assets/icon-failure.png" alt="icon-top">
-                                                <span>3% less</span>
-                                                than week before
-                                            </p>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
+                            <table class="three">
+                                <tr>
+                                    <td class="activity-block-side one left-of-three">
+                                        <table class="col-12 center-on-mob">
+                                            <tr>
+                                                <td>
+                                                    <p class="activity-block-top-text">Engagement</p>
+                                                    <p class="activity-block-subheading">Percentage of team with active views, reactions, and streaks</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="activity-block-center-text"><span>64</span>%</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="activity-block-bottom-text">
+                                                        <img style="margin-right: 4px;" src="assets/icon-success.png" alt="icon-top">
+                                                        <span>8% more</span>
+                                                        than week before
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td class="activity-block-side one centered-of-three">
+                                        <table class="col-12 center-on-mob">
+                                            <tr>
+                                                <td>
+                                                    <p class="activity-block-top-text">Practice</p>
+                                                    <p class="activity-block-subheading">Percentage of correct answers from team members</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="activity-block-center-text"><span>55</span>%</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="activity-block-bottom-text">
+                                                        <img style="margin-right: 4px;" src="assets/icon-success.png" alt="icon-top">
+                                                        <span>6% more</span>
+                                                        than week before
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td class="activity-block-side one right-of-three">
+                                        <table class="col-12 center-on-mob">
+                                            <tr>
+                                                <td>
+                                                    <p class="activity-block-top-text">Test</p>
+                                                    <p class="activity-block-subheading">Percentage of successfully passed tests from the entire team</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="activity-block-center-text"><span>24</span>%</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="activity-block-bottom-text">
+                                                        <img style="margin-right: 4px;" src="assets/icon-failure.png" alt="icon-top">
+                                                        <span>3% less</span>
+                                                        than week before
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
                         </td>
                     </tr>
+
                     <!-- Раздел с локациями -->
                     <tr class="col-12">
                         <td>
@@ -880,15 +925,13 @@
                                                     <tr>
                                                         <td style="width: 50%;">
                                                             <p class="location-heading">Huntsville</p>
-                                                            <p class="location-email"><a class="location-email-link"
-                                                                    href="mailto:tailor.little@gmail.com">tailor.little@gmail.com</a></p>
+                                                            <p class="location-email"><a class="location-email-link" href="mailto:tailor.little@gmail.com">tailor.little@gmail.com</a></p>
                                                             <p class="location-phone"><a class="location-phone-link" href="tel:+15361231212">+1 536
                                                                     123 1212</a></p>
                                                         </td>
                                                         <td style="width: 50%;">
                                                             <p class="location-stat-main-percentage"><span>94</span>%</p>
-                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success"
-                                                                    src="assets/icon-success.png" alt="icon-success"><span>12</span>%</p>
+                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success" src="assets/icon-success.png" alt="icon-success"><span>12</span>%</p>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -899,15 +942,13 @@
                                                     <tr>
                                                         <td style="width: 50%;">
                                                             <p class="location-heading">Montgomery</p>
-                                                            <p class="location-email"><a class="location-email-link"
-                                                                    href="mailto:tailor.little@gmail.com">tailor.little@gmail.com</a></p>
+                                                            <p class="location-email"><a class="location-email-link" href="mailto:tailor.little@gmail.com">tailor.little@gmail.com</a></p>
                                                             <p class="location-phone"><a class="location-phone-link" href="tel:+15361231212">+1 536
                                                                     123 1212</a></p>
                                                         </td>
                                                         <td style="width: 50%;">
                                                             <p class="location-stat-main-percentage"><span>87</span>%</p>
-                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success"
-                                                                    src="assets/icon-success.png" alt="icon-success"><span>6</span>%</p>
+                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success" src="assets/icon-success.png" alt="icon-success"><span>6</span>%</p>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -918,15 +959,13 @@
                                                     <tr>
                                                         <td style="width: 50%;">
                                                             <p class="location-heading">Star Burger</p>
-                                                            <p class="location-email"><a class="location-email-link"
-                                                                    href="mailto:tailor.little@gmail.com">tailor.little@gmail.com</a></p>
+                                                            <p class="location-email"><a class="location-email-link" href="mailto:tailor.little@gmail.com">tailor.little@gmail.com</a></p>
                                                             <p class="location-phone"><a class="location-phone-link" href="tel:+15361231212">+1 536
                                                                     123 1212</a></p>
                                                         </td>
                                                         <td style="width: 50%;">
                                                             <p class="location-stat-main-percentage"><span>68</span>%</p>
-                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success"
-                                                                    src="assets/icon-failure.png" alt="icon-success"><span>6</span>%</p>
+                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success" src="assets/icon-failure.png" alt="icon-success"><span>6</span>%</p>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -937,15 +976,13 @@
                                                     <tr>
                                                         <td style="width: 50%;">
                                                             <p class="location-heading">Sunny Cafe-Bar</p>
-                                                            <p class="location-email"><a class="location-email-link"
-                                                                    href="mailto:tailor.little@gmail.com">tailor.little@gmail.com</a></p>
+                                                            <p class="location-email"><a class="location-email-link" href="mailto:tailor.little@gmail.com">tailor.little@gmail.com</a></p>
                                                             <p class="location-phone"><a class="location-phone-link" href="tel:+15361231212">+1 536
                                                                     123 1212</a></p>
                                                         </td>
                                                         <td style="width: 50%;">
                                                             <p class="location-stat-main-percentage"><span>67</span>%</p>
-                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success"
-                                                                    src="assets/icon-success.png" alt="icon-success"><span>4</span>%</p>
+                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success" src="assets/icon-success.png" alt="icon-success"><span>4</span>%</p>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -956,15 +993,13 @@
                                                     <tr>
                                                         <td style="width: 50%;">
                                                             <p class="location-heading">8th Ave Bar</p>
-                                                            <p class="location-email"><a class="location-email-link"
-                                                                    href="mailto:tailor.little@gmail.com">tailor.little@gmail.com</a></p>
+                                                            <p class="location-email"><a class="location-email-link" href="mailto:tailor.little@gmail.com">tailor.little@gmail.com</a></p>
                                                             <p class="location-phone"><a class="location-phone-link" href="tel:+15361231212">+1 536
                                                                     123 1212</a></p>
                                                         </td>
                                                         <td style="width: 50%;">
                                                             <p class="location-stat-main-percentage"><span>54</span>%</p>
-                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success"
-                                                                    src="assets/icon-failure.png" alt="icon-success"><span>1</span>%</p>
+                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success" src="assets/icon-failure.png" alt="icon-success"><span>1</span>%</p>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -979,15 +1014,13 @@
                                                     <tr>
                                                         <td style="width: 50%;">
                                                             <p class="location-heading">Huntsville</p>
-                                                            <p class="location-email"><a class="location-email-link"
-                                                                    href="mailto:tailor.little@gmail.com">tailor.little@gmail.com</a></p>
+                                                            <p class="location-email"><a class="location-email-link" href="mailto:tailor.little@gmail.com">tailor.little@gmail.com</a></p>
                                                             <p class="location-phone"><a class="location-phone-link" href="tel:+15361231212">+1 536
                                                                     123 1212</a></p>
                                                         </td>
                                                         <td style="width: 50%;">
                                                             <p class="location-stat-main-percentage"><span>94</span>%</p>
-                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success"
-                                                                    src="assets/icon-success.png" alt="icon-success"><span>12</span>%</p>
+                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success" src="assets/icon-success.png" alt="icon-success"><span>12</span>%</p>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -998,15 +1031,13 @@
                                                     <tr>
                                                         <td style="width: 50%;">
                                                             <p class="location-heading">Montgomery</p>
-                                                            <p class="location-email"><a class="location-email-link"
-                                                                    href="mailto:tailor.little@gmail.com">tailor.little@gmail.com</a></p>
+                                                            <p class="location-email"><a class="location-email-link" href="mailto:tailor.little@gmail.com">tailor.little@gmail.com</a></p>
                                                             <p class="location-phone"><a class="location-phone-link" href="tel:+15361231212">+1 536
                                                                     123 1212</a></p>
                                                         </td>
                                                         <td style="width: 50%;">
                                                             <p class="location-stat-main-percentage"><span>87</span>%</p>
-                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success"
-                                                                    src="assets/icon-success.png" alt="icon-success"><span>6</span>%</p>
+                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success" src="assets/icon-success.png" alt="icon-success"><span>6</span>%</p>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -1017,15 +1048,13 @@
                                                     <tr>
                                                         <td style="width: 50%;">
                                                             <p class="location-heading">Star Burger</p>
-                                                            <p class="location-email"><a class="location-email-link"
-                                                                    href="mailto:tailor.little@gmail.com">tailor.little@gmail.com</a></p>
+                                                            <p class="location-email"><a class="location-email-link" href="mailto:tailor.little@gmail.com">tailor.little@gmail.com</a></p>
                                                             <p class="location-phone"><a class="location-phone-link" href="tel:+15361231212">+1 536
                                                                     123 1212</a></p>
                                                         </td>
                                                         <td style="width: 50%;">
                                                             <p class="location-stat-main-percentage"><span>68</span>%</p>
-                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success"
-                                                                    src="assets/icon-failure.png" alt="icon-success"><span>6</span>%</p>
+                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success" src="assets/icon-failure.png" alt="icon-success"><span>6</span>%</p>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -1036,15 +1065,13 @@
                                                     <tr>
                                                         <td style="width: 50%;">
                                                             <p class="location-heading">Sunny Cafe-Bar</p>
-                                                            <p class="location-email"><a class="location-email-link"
-                                                                    href="mailto:tailor.little@gmail.com">tailor.little@gmail.com</a></p>
+                                                            <p class="location-email"><a class="location-email-link" href="mailto:tailor.little@gmail.com">tailor.little@gmail.com</a></p>
                                                             <p class="location-phone"><a class="location-phone-link" href="tel:+15361231212">+1 536
                                                                     123 1212</a></p>
                                                         </td>
                                                         <td style="width: 50%;">
                                                             <p class="location-stat-main-percentage"><span>67</span>%</p>
-                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success"
-                                                                    src="assets/icon-success.png" alt="icon-success"><span>4</span>%</p>
+                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success" src="assets/icon-success.png" alt="icon-success"><span>4</span>%</p>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -1055,15 +1082,13 @@
                                                     <tr>
                                                         <td style="width: 50%;">
                                                             <p class="location-heading">8th Ave Bar</p>
-                                                            <p class="location-email"><a class="location-email-link"
-                                                                    href="mailto:tailor.little@gmail.com">tailor.little@gmail.com</a></p>
+                                                            <p class="location-email"><a class="location-email-link" href="mailto:tailor.little@gmail.com">tailor.little@gmail.com</a></p>
                                                             <p class="location-phone"><a class="location-phone-link" href="tel:+15361231212">+1 536
                                                                     123 1212</a></p>
                                                         </td>
                                                         <td style="width: 50%;">
                                                             <p class="location-stat-main-percentage"><span>54</span>%</p>
-                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success"
-                                                                    src="assets/icon-failure.png" alt="icon-success"><span>1</span>%</p>
+                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success" src="assets/icon-failure.png" alt="icon-success"><span>1</span>%</p>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -1103,15 +1128,13 @@
                                                                     </tr>
                                                                     <tr>
                                                                         <td class="user-rating-spec">
-                                                                            <p class="user-spec-label"><span
-                                                                                    class="user-spec-label-purple">waiter</span></p>
+                                                                            <p class="user-spec-label"><span class="user-spec-label-purple">waiter</span></p>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td class="user-rating-points">
                                                                             <p class="user-rating-points-score">512</p>
-                                                                            <p class="user-rating-points-persentage"><img class="small-icon-success"
-                                                                                    src="assets/icon-success.png" alt="icon-success"><span>12</span>%
+                                                                            <p class="user-rating-points-persentage"><img class="small-icon-success" src="assets/icon-success.png" alt="icon-success"><span>12</span>%
                                                                             </p>
                                                                         </td>
                                                                     </tr>
@@ -1133,15 +1156,13 @@
                                                                     </tr>
                                                                     <tr>
                                                                         <td class="user-rating-spec">
-                                                                            <p class="user-spec-label"><span
-                                                                                    class="user-spec-label-orange">manager</span></p>
+                                                                            <p class="user-spec-label"><span class="user-spec-label-orange">manager</span></p>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td class="user-rating-points">
                                                                             <p class="user-rating-points-score">568</p>
-                                                                            <p class="user-rating-points-persentage"><img class="small-icon-success"
-                                                                                    src="assets/icon-success.png" alt="icon-success"><span>16</span>%
+                                                                            <p class="user-rating-points-persentage"><img class="small-icon-success" src="assets/icon-success.png" alt="icon-success"><span>16</span>%
                                                                             </p>
                                                                         </td>
                                                                     </tr>
@@ -1163,15 +1184,13 @@
                                                                     </tr>
                                                                     <tr>
                                                                         <td class="user-rating-spec">
-                                                                            <p class="user-spec-label"><span
-                                                                                    class="user-spec-label-blue">bartender</span></p>
+                                                                            <p class="user-spec-label"><span class="user-spec-label-blue">bartender</span></p>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td class="user-rating-points">
                                                                             <p class="user-rating-points-score">499</p>
-                                                                            <p class="user-rating-points-persentage"><img class="small-icon-success"
-                                                                                    src="assets/icon-success.png" alt="icon-success"><span>12</span>%
+                                                                            <p class="user-rating-points-persentage"><img class="small-icon-success" src="assets/icon-success.png" alt="icon-success"><span>12</span>%
                                                                             </p>
                                                                         </td>
                                                                     </tr>
@@ -1195,8 +1214,7 @@
                                                         </td>
                                                         <td style="width: 13%;">
                                                             <p class="location-stat-main-percentage"><span>368</span></p>
-                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success"
-                                                                    src="assets/icon-failure.png" alt="icon-success"><span>2</span>%</p>
+                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success" src="assets/icon-failure.png" alt="icon-success"><span>2</span>%</p>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -1214,8 +1232,7 @@
                                                         </td>
                                                         <td style="width: 13%;">
                                                             <p class="location-stat-main-percentage"><span>344</span></p>
-                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success"
-                                                                    src="assets/icon-failure.png" alt="icon-success"><span>1</span>%</p>
+                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success" src="assets/icon-failure.png" alt="icon-success"><span>1</span>%</p>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -1239,8 +1256,7 @@
                                                         </td>
                                                         <td style="width: 13%;">
                                                             <p class="location-stat-main-percentage"><span>46</span></p>
-                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success"
-                                                                    src="assets/icon-failure.png" alt="icon-success"><span>2</span>%</p>
+                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success" src="assets/icon-failure.png" alt="icon-success"><span>2</span>%</p>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -1258,8 +1274,7 @@
                                                         </td>
                                                         <td style="width: 13%;">
                                                             <p class="location-stat-main-percentage"><span>45</span></p>
-                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success"
-                                                                    src="assets/icon-success.png" alt="icon-success"><span>1</span>%</p>
+                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success" src="assets/icon-success.png" alt="icon-success"><span>1</span>%</p>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -1277,8 +1292,7 @@
                                                         </td>
                                                         <td style="width: 13%;">
                                                             <p class="location-stat-main-percentage"><span>32</span></p>
-                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success"
-                                                                    src="assets/icon-failure.png" alt="icon-success"><span>1</span>%</p>
+                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success" src="assets/icon-failure.png" alt="icon-success"><span>1</span>%</p>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -1296,8 +1310,7 @@
                                                         </td>
                                                         <td style="width: 13%;">
                                                             <p class="location-stat-main-percentage"><span>31</span></p>
-                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success"
-                                                                    src="assets/icon-failure.png" alt="icon-success"><span>1</span>%</p>
+                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success" src="assets/icon-failure.png" alt="icon-success"><span>1</span>%</p>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -1315,8 +1328,7 @@
                                                         </td>
                                                         <td style="width: 13%;">
                                                             <p class="location-stat-main-percentage"><span>12</span></p>
-                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success"
-                                                                    src="assets/icon-success.png" alt="icon-success"><span>1</span>%</p>
+                                                            <p class="location-stat-sub-percentage"><img class="small-icon-success" src="assets/icon-success.png" alt="icon-success"><span>1</span>%</p>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -1343,8 +1355,7 @@
                                         <div>
                                             <table>
                                                 <tr>
-                                                    <td class="middle-all"><img class="cell-icon" src="assets/additional/star-icon.png"
-                                                            alt="start-icon"></td>
+                                                    <td class="middle-all"><img class="cell-icon" src="assets/additional/star-icon.png" alt="start-icon"></td>
                                                 </tr>
                                                 <tr>
                                                     <td class="middle-all">
@@ -1355,27 +1366,22 @@
                                                 <tr>
                                                     <td class="middle-all">
                                                         <div>
-                                                            <table
-                                                                style="margin: 0 auto; border-collapse: collapse !important; border-spacing: 0 !important;">
+                                                            <table style="margin: 0 auto; border-collapse: collapse !important; border-spacing: 0 !important;">
                                                                 <tr>
                                                                     <td style="text-align: center; padding-right: 7px; display: none !important;">
-                                                                        <img class="small-cell-icon" src="assets/additional/view-icon.png"
-                                                                            alt="view-icon">
+                                                                        <img class="small-cell-icon" src="assets/additional/view-icon.png" alt="view-icon">
                                                                         <p class="cell-info-amnount">349</p>
                                                                     </td>
                                                                     <td style="text-align: center; padding-right: 7px;">
-                                                                        <img class="small-cell-icon" src="assets/additional/like-icon.png"
-                                                                            alt="like-icon">
+                                                                        <img class="small-cell-icon" src="assets/additional/like-icon.png" alt="like-icon">
                                                                         <p class="cell-info-amnount">143</p>
                                                                     </td>
                                                                     <td style="text-align: center; padding-right: 7px;">
-                                                                        <img class="small-cell-icon" src="assets/additional/dislike-icon.png"
-                                                                            alt="dislike-icon">
+                                                                        <img class="small-cell-icon" src="assets/additional/dislike-icon.png" alt="dislike-icon">
                                                                         <p class="cell-info-amnount">2</p>
                                                                     </td>
                                                                     <td style="text-align: center; padding-right: 0px;">
-                                                                        <img class="small-cell-icon" src="assets/additional/comment-icon.png"
-                                                                            alt="comment-icon">
+                                                                        <img class="small-cell-icon" src="assets/additional/comment-icon.png" alt="comment-icon">
                                                                         <p class="cell-info-amnount">12</p>
                                                                     </td>
                                                                 </tr>
@@ -1397,8 +1403,7 @@
                                         <div>
                                             <table>
                                                 <tr>
-                                                    <td class="middle-all"><img class="cell-icon" src="assets/additional/checklist-icon.png"
-                                                            alt="checklist-icon"></td>
+                                                    <td class="middle-all"><img class="cell-icon" src="assets/additional/checklist-icon.png" alt="checklist-icon"></td>
                                                 </tr>
                                                 <tr>
                                                     <td class="middle-all">
@@ -1409,8 +1414,7 @@
                                                 <tr>
                                                     <td class="middle-all">
                                                         <div>
-                                                            <table
-                                                                style="margin: 0 auto; border-collapse: collapse !important; border-spacing: 0 !important;">
+                                                            <table style="margin: 0 auto; border-collapse: collapse !important; border-spacing: 0 !important;">
                                                                 <tr>
                                                                     <td>
                                                                         <p class="cell-topic-quote"><span class="cell-topic-quote-text">30 %</span>
@@ -1437,8 +1441,7 @@
                                         <div>
                                             <table>
                                                 <tr>
-                                                    <td class="middle-all"><img class="cell-icon" src="assets/additional/question-icon.png"
-                                                            alt="question-icon"></td>
+                                                    <td class="middle-all"><img class="cell-icon" src="assets/additional/question-icon.png" alt="question-icon"></td>
                                                 </tr>
                                                 <tr>
                                                     <td class="middle-all">
@@ -1449,8 +1452,7 @@
                                                 <tr>
                                                     <td class="middle-all">
                                                         <div>
-                                                            <table
-                                                                style="margin: 0 auto; border-collapse: collapse !important; border-spacing: 0 !important;">
+                                                            <table style="margin: 0 auto; border-collapse: collapse !important; border-spacing: 0 !important;">
                                                                 <tr>
                                                                     <td>
                                                                         <p class="cell-topic-quote"><span class="cell-topic-quote-text">50 %</span>
@@ -1481,8 +1483,7 @@
                                         <div>
                                             <table>
                                                 <tr>
-                                                    <td class="middle-all"><img class="cell-icon" src="assets/additional/dish-icon.png"
-                                                            alt="dish-icon"></td>
+                                                    <td class="middle-all"><img class="cell-icon" src="assets/additional/dish-icon.png" alt="dish-icon"></td>
                                                 </tr>
                                                 <tr>
                                                     <td class="middle-all">
@@ -1493,27 +1494,22 @@
                                                 <tr>
                                                     <td class="middle-all">
                                                         <div>
-                                                            <table
-                                                                style="margin: 0 auto; border-collapse: collapse !important; border-spacing: 0 !important;">
+                                                            <table style="margin: 0 auto; border-collapse: collapse !important; border-spacing: 0 !important;">
                                                                 <tr>
                                                                     <td style="text-align: center; padding-right: 7px;">
-                                                                        <img class="small-cell-icon" src="assets/additional/view-icon.png"
-                                                                            alt="view-icon">
+                                                                        <img class="small-cell-icon" src="assets/additional/view-icon.png" alt="view-icon">
                                                                         <p class="cell-info-amnount">349</p>
                                                                     </td>
                                                                     <td style="text-align: center; padding-right: 7px;">
-                                                                        <img class="small-cell-icon" src="assets/additional/like-icon.png"
-                                                                            alt="like-icon">
+                                                                        <img class="small-cell-icon" src="assets/additional/like-icon.png" alt="like-icon">
                                                                         <p class="cell-info-amnount">143</p>
                                                                     </td>
                                                                     <td style="text-align: center; padding-right: 7px;">
-                                                                        <img class="small-cell-icon" src="assets/additional/dislike-icon.png"
-                                                                            alt="dislike-icon">
+                                                                        <img class="small-cell-icon" src="assets/additional/dislike-icon.png" alt="dislike-icon">
                                                                         <p class="cell-info-amnount">2</p>
                                                                     </td>
                                                                     <td style="text-align: center; padding-right: 0px;">
-                                                                        <img class="small-cell-icon" src="assets/additional/comment-icon.png"
-                                                                            alt="comment-icon">
+                                                                        <img class="small-cell-icon" src="assets/additional/comment-icon.png" alt="comment-icon">
                                                                         <p class="cell-info-amnount">12</p>
                                                                     </td>
                                                                 </tr>
@@ -1535,8 +1531,7 @@
                                         <div>
                                             <table>
                                                 <tr>
-                                                    <td class="middle-all"><img class="cell-icon" src="assets/additional/drink-icon.png"
-                                                            alt="drink-icon"></td>
+                                                    <td class="middle-all"><img class="cell-icon" src="assets/additional/drink-icon.png" alt="drink-icon"></td>
                                                 </tr>
                                                 <tr>
                                                     <td class="middle-all">
@@ -1547,27 +1542,22 @@
                                                 <tr>
                                                     <td class="middle-all">
                                                         <div>
-                                                            <table
-                                                                style="margin: 0 auto; border-collapse: collapse !important; border-spacing: 0 !important;">
+                                                            <table style="margin: 0 auto; border-collapse: collapse !important; border-spacing: 0 !important;">
                                                                 <tr>
                                                                     <td style="text-align: center; padding-right: 7px;">
-                                                                        <img class="small-cell-icon" src="assets/additional/view-icon.png"
-                                                                            alt="view-icon">
+                                                                        <img class="small-cell-icon" src="assets/additional/view-icon.png" alt="view-icon">
                                                                         <p class="cell-info-amnount">449</p>
                                                                     </td>
                                                                     <td style="text-align: center; padding-right: 7px;">
-                                                                        <img class="small-cell-icon" src="assets/additional/like-icon.png"
-                                                                            alt="like-icon">
+                                                                        <img class="small-cell-icon" src="assets/additional/like-icon.png" alt="like-icon">
                                                                         <p class="cell-info-amnount">178</p>
                                                                     </td>
                                                                     <td style="text-align: center; padding-right: 7px;">
-                                                                        <img class="small-cell-icon" src="assets/additional/dislike-icon.png"
-                                                                            alt="dislike-icon">
+                                                                        <img class="small-cell-icon" src="assets/additional/dislike-icon.png" alt="dislike-icon">
                                                                         <p class="cell-info-amnount">13</p>
                                                                     </td>
                                                                     <td style="text-align: center; padding-right: 0px;">
-                                                                        <img class="small-cell-icon" src="assets/additional/comment-icon.png"
-                                                                            alt="comment-icon">
+                                                                        <img class="small-cell-icon" src="assets/additional/comment-icon.png" alt="comment-icon">
                                                                         <p class="cell-info-amnount">1</p>
                                                                     </td>
                                                                 </tr>
@@ -1589,8 +1579,7 @@
                                         <div>
                                             <table>
                                                 <tr>
-                                                    <td class="middle-all"><img class="cell-icon" src="assets/additional/document-icon.png"
-                                                            alt="document-icon"></td>
+                                                    <td class="middle-all"><img class="cell-icon" src="assets/additional/document-icon.png" alt="document-icon"></td>
                                                 </tr>
                                                 <tr>
                                                     <td class="middle-all">
@@ -1601,27 +1590,22 @@
                                                 <tr>
                                                     <td class="middle-all">
                                                         <div>
-                                                            <table
-                                                                style="margin: 0 auto; border-collapse: collapse !important; border-spacing: 0 !important;">
+                                                            <table style="margin: 0 auto; border-collapse: collapse !important; border-spacing: 0 !important;">
                                                                 <tr>
                                                                     <td style="text-align: center; padding-right: 7px;">
-                                                                        <img class="small-cell-icon" src="assets/additional/view-icon.png"
-                                                                            alt="view-icon">
+                                                                        <img class="small-cell-icon" src="assets/additional/view-icon.png" alt="view-icon">
                                                                         <p class="cell-info-amnount">549</p>
                                                                     </td>
                                                                     <td style="text-align: center; padding-right: 7px;">
-                                                                        <img class="small-cell-icon" src="assets/additional/like-icon.png"
-                                                                            alt="like-icon">
+                                                                        <img class="small-cell-icon" src="assets/additional/like-icon.png" alt="like-icon">
                                                                         <p class="cell-info-amnount">213</p>
                                                                     </td>
                                                                     <td style="text-align: center; padding-right: 7px;">
-                                                                        <img class="small-cell-icon" src="assets/additional/dislike-icon.png"
-                                                                            alt="dislike-icon">
+                                                                        <img class="small-cell-icon" src="assets/additional/dislike-icon.png" alt="dislike-icon">
                                                                         <p class="cell-info-amnount">7</p>
                                                                     </td>
                                                                     <td style="text-align: center; padding-right: 0px;">
-                                                                        <img class="small-cell-icon" src="assets/additional/comment-icon.png"
-                                                                            alt="comment-icon">
+                                                                        <img class="small-cell-icon" src="assets/additional/comment-icon.png" alt="comment-icon">
                                                                         <p class="cell-info-amnount">3</p>
                                                                     </td>
                                                                 </tr>
@@ -1669,8 +1653,7 @@
 
                 <tr>
                     <td>
-                        <p class="footer-regular-text">You have received this email as a registered user of Mr.Tomato®<br />You can <a
-                                class="unsub-link" href="#">unsubscribe</a> from these emails here.</p>
+                        <p class="footer-regular-text">You have received this email as a registered user of Mr.Tomato®<br />You can <a class="unsub-link" href="#">unsubscribe</a> from these emails here.</p>
                     </td>
                 </tr>
 
