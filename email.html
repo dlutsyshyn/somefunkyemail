@@ -490,15 +490,21 @@
 
         .dashed-table {
             border: 2px dashed #D4D4D8;
+            border-collapse: collapse !important;
+            border-spacing: 0px !important;
         }
 
         .dashed-table-cell {
-            border: 2px dashed #D4D4D8;
             padding-top: 8px;
             padding-left: 12px;
             padding-right: 12px;
             padding-bottom: 12px;
             width: 33.33333%;
+        }
+
+        .dashed-center {
+            border-left: 2px dashed #D4D4D8;
+            border-right: 2px dashed #D4D4D8;
         }
 
         .cell-icon {
@@ -542,6 +548,8 @@
             margin-bottom: 0;
             max-height: 56px;
             text-overflow: ellipsis;
+            overflow: hidden;
+            word-break: break-word;
 
         }
 
@@ -550,6 +558,9 @@
             color: #52525B !important;
             font-weight: 400;
             font-size: 14px;
+            max-width: 150px;
+            text-overflow: ellipsis;
+            max-height: 35px;
         }
 
         .main-link {
@@ -649,6 +660,23 @@
             text-align: left;
         }
 
+        .dashed-three {
+            border-spacing: 0px !important;
+            width: 100%;
+            text-align: center;
+            font-size: 0;
+        }
+
+        .dashed-three .one {
+            width: 50%;
+            border-bottom: 2px dashed #D4D4D8;
+            max-width: 212px;
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+            height: 183px;
+        }
+
         .centered-of-three {
             border-left: 2px solid #FFFFFF;
             border-right: 2px solid #FFFFFF;
@@ -664,10 +692,12 @@
 
         .fixed-stats {
             min-height: 360px;
+            max-height: 361px;
         }
 
         .fixed-stats-extend {
             min-height: 372px;
+            max-height: 373px;
         }
 
         .stats-user-photo-container {
@@ -680,6 +710,30 @@
 
         .stats-user-score-details {
             width: 60px !important;
+        }
+
+        .likes-on-dashed {
+            padding-top: 5px;
+        }
+
+        .no-bottom-border {
+            border-bottom: none !important;
+        }
+
+        .no-top-border {
+            border-top: none !important;
+        }
+
+        .no-left-border {
+            border-left: none !important;
+        }
+
+        .no-right-border {
+            border-right: none !important;
+        }
+
+        .short-dashed-heading {
+            width: 70px !important;
         }
 
         /* Media */
@@ -739,9 +793,41 @@
             .one {
                 max-width: 100% !important;
             }
+
+            .push-second-row-mobile {
+                padding-top: 20px;
+            }
+
+            .no-bottom-border-md {
+                border-bottom: none !important;
+            }
+
+            .no-top-border-md {
+                border-top: none !important;
+            }
+
+            .no-left-border-md {
+                border-left: none !important;
+            }
+
+            .no-right-border-md {
+                border-right: none !important;
+            }
+
+            .left-dashed-border-md {
+                border-left: 2px dashed #D4D4D8 !important;
+            }
         }
 
-        @media (max-width: 400px) {}
+        @media (max-width: 450px) {
+            .dashed-three .one {
+                width: 100%;
+            }
+
+            .no-left-border-sm {
+                border-left: none !important;
+            }
+        }
     </style>
 
 
@@ -1243,7 +1329,7 @@
                         </td>
                     </tr>
                     <!-- Раздел с пользователями -->
-                    <tr class="col-12">
+                    <tr class="col-12 push-second-row-mobile">
                         <td>
                             <div class="pt-4">
                                 <table class="two">
@@ -1273,7 +1359,9 @@
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <td class="user-rating-name">
-                                                                                        <p class="user-name-rating"><span>Dolores<br />Chesterton</span></p>
+                                                                                        <p class="user-name-rating">
+                                                                                            <span>Dolores<br />Chesterton</span>
+                                                                                        </p>
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
@@ -1286,7 +1374,8 @@
                                                                                     <td class="user-rating-points">
                                                                                         <p class="user-rating-points-score">512</p>
                                                                                         <p class="user-rating-points-persentage"><img
-                                                                                                class="small-icon-success" src="assets/icon-success.png"
+                                                                                                class="small-icon-success"
+                                                                                                src="assets/icon-success.png"
                                                                                                 alt="icon-success"><span>12</span>%
                                                                                         </p>
                                                                                     </td>
@@ -1304,7 +1393,8 @@
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <td class="user-rating-name">
-                                                                                        <p class="user-name-rating"><span>Richard<br />Johnson</span></p>
+                                                                                        <p class="user-name-rating"><span>Richard<br />Johnson</span>
+                                                                                        </p>
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
@@ -1317,7 +1407,8 @@
                                                                                     <td class="user-rating-points">
                                                                                         <p class="user-rating-points-score">568</p>
                                                                                         <p class="user-rating-points-persentage"><img
-                                                                                                class="small-icon-success" src="assets/icon-success.png"
+                                                                                                class="small-icon-success"
+                                                                                                src="assets/icon-success.png"
                                                                                                 alt="icon-success"><span>16</span>%
                                                                                         </p>
                                                                                     </td>
@@ -1336,7 +1427,8 @@
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <td class="user-rating-name">
-                                                                                        <p class="user-name-rating"><span>Jeremiah<br />Birch</span></p>
+                                                                                        <p class="user-name-rating"><span>Jeremiah<br />Birch</span>
+                                                                                        </p>
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
@@ -1349,7 +1441,8 @@
                                                                                     <td class="user-rating-points">
                                                                                         <p class="user-rating-points-score">499</p>
                                                                                         <p class="user-rating-points-persentage"><img
-                                                                                                class="small-icon-success" src="assets/icon-success.png"
+                                                                                                class="small-icon-success"
+                                                                                                src="assets/icon-success.png"
                                                                                                 alt="icon-success"><span>12</span>%
                                                                                         </p>
                                                                                     </td>
@@ -1366,14 +1459,17 @@
                                                 <tr>
                                                     <td>
                                                         <div style="margin-bottom: 8px; margin-top: 16px;">
-                                                            <table style="border-collapse: collapse !important; border-spacing: 0 !important; width: 100%;">
+                                                            <table
+                                                                style="border-collapse: collapse !important; border-spacing: 0 !important; width: 100%;">
                                                                 <tr>
                                                                     <td class="stats-user-photo-container">
-                                                                        <img class="user-stats-avatar" src="assets/avatars/user-avatar-1.png" alt="user-avatar">
+                                                                        <img class="user-stats-avatar" src="assets/avatars/user-avatar-1.png"
+                                                                            alt="user-avatar">
                                                                     </td>
                                                                     <td class="stats-user-job-details">
                                                                         <p class="user-stats-name">Richard Johnson</p>
-                                                                        <p class="user-stats-spec"><span class="user-spec-label-orange">manager</span></p>
+                                                                        <p class="user-stats-spec"><span class="user-spec-label-orange">manager</span>
+                                                                        </p>
                                                                     </td>
                                                                     <td class="stats-user-score-details">
                                                                         <p class="location-stat-main-percentage"><span>368</span></p>
@@ -1389,14 +1485,17 @@
                                                 <tr>
                                                     <td>
                                                         <div style="margin-bottom: 8px;">
-                                                            <table style="border-collapse: collapse !important; border-spacing: 0 !important; width: 100%;">
+                                                            <table
+                                                                style="border-collapse: collapse !important; border-spacing: 0 !important; width: 100%;">
                                                                 <tr>
                                                                     <td class="stats-user-photo-container">
-                                                                        <img class="user-stats-avatar" src="assets/avatars/user-avatar-2.png" alt="user-avatar">
+                                                                        <img class="user-stats-avatar" src="assets/avatars/user-avatar-2.png"
+                                                                            alt="user-avatar">
                                                                     </td>
                                                                     <td class="stats-user-job-details">
                                                                         <p class="user-stats-name">John Callen</p>
-                                                                        <p class="user-stats-spec"><span class="user-spec-label-blue">cool pizza man</span></p>
+                                                                        <p class="user-stats-spec"><span class="user-spec-label-blue">cool pizza
+                                                                                man</span></p>
                                                                     </td>
                                                                     <td class="stats-user-score-details">
                                                                         <p class="location-stat-main-percentage"><span>344</span></p>
@@ -1423,14 +1522,17 @@
                                                 <tr>
                                                     <td>
                                                         <div class="mv-3">
-                                                            <table style="border-collapse: collapse !important; border-spacing: 0 !important; width: 100%;">
+                                                            <table
+                                                                style="border-collapse: collapse !important; border-spacing: 0 !important; width: 100%;">
                                                                 <tr>
                                                                     <td class="stats-user-photo-container">
-                                                                        <img class="user-stats-avatar" src="assets/avatars/user-avatar-1.png" alt="user-avatar">
+                                                                        <img class="user-stats-avatar" src="assets/avatars/user-avatar-1.png"
+                                                                            alt="user-avatar">
                                                                     </td>
                                                                     <td class="stats-user-job-details">
                                                                         <p class="user-stats-name">Richard Johnson</p>
-                                                                        <p class="user-stats-spec"><span class="user-spec-label-orange">manager</span></p>
+                                                                        <p class="user-stats-spec"><span class="user-spec-label-orange">manager</span>
+                                                                        </p>
                                                                     </td>
                                                                     <td class="stats-user-score-details">
                                                                         <p class="location-stat-main-percentage"><span>46</span></p>
@@ -1446,14 +1548,17 @@
                                                 <tr>
                                                     <td>
                                                         <div class="mv-3">
-                                                            <table style="border-collapse: collapse !important; border-spacing: 0 !important; width: 100%;">
+                                                            <table
+                                                                style="border-collapse: collapse !important; border-spacing: 0 !important; width: 100%;">
                                                                 <tr>
                                                                     <td class="stats-user-photo-container">
-                                                                        <img class="user-stats-avatar" src="assets/avatars/user-avatar-2.png" alt="user-avatar">
+                                                                        <img class="user-stats-avatar" src="assets/avatars/user-avatar-2.png"
+                                                                            alt="user-avatar">
                                                                     </td>
                                                                     <td class="stats-user-job-details">
                                                                         <p class="user-stats-name">John Callen</p>
-                                                                        <p class="user-stats-spec"><span class="user-spec-label-blue">cool pizza man</span></p>
+                                                                        <p class="user-stats-spec"><span class="user-spec-label-blue">cool pizza
+                                                                                man</span></p>
                                                                     </td>
                                                                     <td class="stats-user-score-details">
                                                                         <p class="location-stat-main-percentage"><span>45</span></p>
@@ -1469,14 +1574,17 @@
                                                 <tr>
                                                     <td>
                                                         <div class="mv-3">
-                                                            <table style="border-collapse: collapse !important; border-spacing: 0 !important; width: 100%;">
+                                                            <table
+                                                                style="border-collapse: collapse !important; border-spacing: 0 !important; width: 100%;">
                                                                 <tr>
                                                                     <td class="stats-user-photo-container">
-                                                                        <img class="user-stats-avatar" src="assets/avatars/user-avatar-3.png" alt="user-avatar">
+                                                                        <img class="user-stats-avatar" src="assets/avatars/user-avatar-3.png"
+                                                                            alt="user-avatar">
                                                                     </td>
                                                                     <td class="stats-user-job-details">
                                                                         <p class="user-stats-name">Jeremiah Birch</p>
-                                                                        <p class="user-stats-spec"><span class="user-spec-label-cyan">delivery man</span></p>
+                                                                        <p class="user-stats-spec"><span class="user-spec-label-cyan">delivery
+                                                                                man</span></p>
                                                                     </td>
                                                                     <td class="stats-user-score-details">
                                                                         <p class="location-stat-main-percentage"><span>32</span></p>
@@ -1492,14 +1600,17 @@
                                                 <tr>
                                                     <td>
                                                         <div class="mv-3">
-                                                            <table style="border-collapse: collapse !important; border-spacing: 0 !important; width: 100%;">
+                                                            <table
+                                                                style="border-collapse: collapse !important; border-spacing: 0 !important; width: 100%;">
                                                                 <tr>
                                                                     <td class="stats-user-photo-container">
-                                                                        <img class="user-stats-avatar" src="assets/avatars/user-avatar-2.png" alt="user-avatar">
+                                                                        <img class="user-stats-avatar" src="assets/avatars/user-avatar-2.png"
+                                                                            alt="user-avatar">
                                                                     </td>
                                                                     <td class="stats-user-job-details">
                                                                         <p class="user-stats-name">John Callen</p>
-                                                                        <p class="user-stats-spec"><span class="user-spec-label-blue">bartender</span></p>
+                                                                        <p class="user-stats-spec"><span class="user-spec-label-blue">bartender</span>
+                                                                        </p>
                                                                     </td>
                                                                     <td class="stats-user-score-details">
                                                                         <p class="location-stat-main-percentage"><span>31</span></p>
@@ -1515,14 +1626,17 @@
                                                 <tr>
                                                     <td>
                                                         <div class="mv-3">
-                                                            <table style="border-collapse: collapse !important; border-spacing: 0 !important; width: 100%;">
+                                                            <table
+                                                                style="border-collapse: collapse !important; border-spacing: 0 !important; width: 100%;">
                                                                 <tr>
                                                                     <td class="stats-user-photo-container">
-                                                                        <img class="user-stats-avatar" src="assets/avatars/user-avatar-1.png" alt="user-avatar">
+                                                                        <img class="user-stats-avatar" src="assets/avatars/user-avatar-1.png"
+                                                                            alt="user-avatar">
                                                                     </td>
                                                                     <td class="stats-user-job-details">
                                                                         <p class="user-stats-name">Richard Johnson</p>
-                                                                        <p class="user-stats-spec"><span class="user-spec-label-blue">waiter</span></p>
+                                                                        <p class="user-stats-spec"><span class="user-spec-label-blue">waiter</span>
+                                                                        </p>
                                                                     </td>
                                                                     <td class="stats-user-score-details">
                                                                         <p class="location-stat-main-percentage"><span>12</span></p>
@@ -1550,312 +1664,427 @@
                         </td>
                     </tr>
                     <!-- Табличка Хайлайтс (6 ячеек) -->
-                    <tr class="col-12" style="display: none !important;">
+                    <tr class="col-12">
                         <td>
-                            <table class="dashed-table" style="border-collapse: collapse !important; border-spacing: 0 !important;">
-                                <tr>
-                                    <td class="dashed-table-cell">
-                                        <div>
-                                            <table>
-                                                <tr>
-                                                    <td class="middle-all"><img class="cell-icon" src="assets/additional/star-icon.png"
-                                                            alt="start-icon"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="middle-all">
-                                                        <p class="table-cell-heading tight-heading-cell">Top Rated Post</p>
-                                                    </td>
-                                                </tr>
+                            <div>
+                                <table class="dashed-table dashed-three no-bottom-border">
+                                    <tr>
+                                        <td class="dashed-table-cell one">
+                                            <div>
+                                                <table>
+                                                    <tr>
+                                                        <td class="middle-all"><img class="cell-icon" src="assets/additional/star-icon.png"
+                                                                alt="start-icon"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="middle-all">
+                                                            <p class="table-cell-heading tight-heading-cell">Top Rated Post</p>
+                                                        </td>
+                                                    </tr>
 
-                                                <tr>
-                                                    <td class="middle-all">
-                                                        <div>
-                                                            <table
-                                                                style="margin: 0 auto; border-collapse: collapse !important; border-spacing: 0 !important;">
-                                                                <tr>
-                                                                    <td style="text-align: center; padding-right: 7px; display: none !important;">
-                                                                        <img class="small-cell-icon" src="assets/additional/view-icon.png"
-                                                                            alt="view-icon">
-                                                                        <p class="cell-info-amnount">349</p>
-                                                                    </td>
-                                                                    <td style="text-align: center; padding-right: 7px;">
-                                                                        <img class="small-cell-icon" src="assets/additional/like-icon.png"
-                                                                            alt="like-icon">
-                                                                        <p class="cell-info-amnount">143</p>
-                                                                    </td>
-                                                                    <td style="text-align: center; padding-right: 7px;">
-                                                                        <img class="small-cell-icon" src="assets/additional/dislike-icon.png"
-                                                                            alt="dislike-icon">
-                                                                        <p class="cell-info-amnount">2</p>
-                                                                    </td>
-                                                                    <td style="text-align: center; padding-right: 0px;">
-                                                                        <img class="small-cell-icon" src="assets/additional/comment-icon.png"
-                                                                            alt="comment-icon">
-                                                                        <p class="cell-info-amnount">12</p>
-                                                                    </td>
-                                                                </tr>
-                                                            </table>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <p class="cell-question-link">
-                                                            <a class="cell-question-link-text" href="#">Restaurant Atmosphere and its influence</a>
-                                                        </p>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                    </td>
-                                    <td class="dashed-table-cell">
-                                        <div>
-                                            <table>
-                                                <tr>
-                                                    <td class="middle-all"><img class="cell-icon" src="assets/additional/checklist-icon.png"
-                                                            alt="checklist-icon"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="middle-all">
-                                                        <p class="table-cell-heading">Most complicated checklist</p>
-                                                    </td>
-                                                </tr>
+                                                    <tr>
+                                                        <td class="middle-all likes-on-dashed">
+                                                            <div>
+                                                                <table
+                                                                    style="margin: 0 auto; border-collapse: collapse !important; border-spacing: 0 !important;">
+                                                                    <tr>
+                                                                        <td style="text-align: center; padding-right: 7px; display: none !important;">
+                                                                            <img class="small-cell-icon" src="assets/additional/view-icon.png"
+                                                                                alt="view-icon">
+                                                                            <p class="cell-info-amnount">349</p>
+                                                                        </td>
+                                                                        <td style="text-align: center; padding-right: 7px;">
+                                                                            <img class="small-cell-icon" src="assets/additional/like-icon.png"
+                                                                                alt="like-icon">
+                                                                            <p class="cell-info-amnount">143</p>
+                                                                        </td>
+                                                                        <td style="text-align: center; padding-right: 7px;">
+                                                                            <img class="small-cell-icon" src="assets/additional/dislike-icon.png"
+                                                                                alt="dislike-icon">
+                                                                            <p class="cell-info-amnount">2</p>
+                                                                        </td>
+                                                                        <td style="text-align: center; padding-right: 0px;">
+                                                                            <img class="small-cell-icon" src="assets/additional/comment-icon.png"
+                                                                                alt="comment-icon">
+                                                                            <p class="cell-info-amnount">12</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p class="cell-question-link">
+                                                                <a class="cell-question-link-text" href="#">Restaurant Atmosphere and its
+                                                                    influence</a>
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </td>
+                                        <td class="dashed-table-cell one dashed-center no-right-border-md no-left-border-sm">
+                                            <div>
+                                                <table>
+                                                    <tr>
+                                                        <td class="middle-all"><img class="cell-icon" src="assets/additional/checklist-icon.png"
+                                                                alt="checklist-icon"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="middle-all">
+                                                            <p class="table-cell-heading">Most complicated checklist</p>
+                                                        </td>
+                                                    </tr>
 
-                                                <tr>
-                                                    <td class="middle-all">
-                                                        <div>
-                                                            <table
-                                                                style="margin: 0 auto; border-collapse: collapse !important; border-spacing: 0 !important;">
-                                                                <tr>
-                                                                    <td>
-                                                                        <p class="cell-topic-quote"><span class="cell-topic-quote-text">30 %</span>
-                                                                        </p>
-                                                                        <p class="cell-topic-subqoute">declined checklist</p>
-                                                                    </td>
-                                                                </tr>
-                                                            </table>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <p class="cell-question-link">
-                                                            <a class="cell-question-link-text" href="#">Cleaning checklist for kitchen and fridge
-                                                                room</a>
-                                                        </p>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                    </td>
-                                    <td class="dashed-table-cell">
-                                        <div>
-                                            <table>
-                                                <tr>
-                                                    <td class="middle-all"><img class="cell-icon" src="assets/additional/question-icon.png"
-                                                            alt="question-icon"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="middle-all">
-                                                        <p class="table-cell-heading">Most complicated question</p>
-                                                    </td>
-                                                </tr>
+                                                    <tr>
+                                                        <td class="middle-all">
+                                                            <div>
+                                                                <table
+                                                                    style="margin: 0 auto; border-collapse: collapse !important; border-spacing: 0 !important;">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <p class="cell-topic-quote"><span class="cell-topic-quote-text">30
+                                                                                    %</span>
+                                                                            </p>
+                                                                            <p class="cell-topic-subqoute">declined checklist</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p class="cell-question-link">
+                                                                <a class="cell-question-link-text" href="#">Cleaning checklist for kitchen and fridge
+                                                                    room</a>
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </td>
+                                        <td class="dashed-table-cell one chart-desktop">
+                                            <div>
+                                                <table>
+                                                    <tr>
+                                                        <td class="middle-all"><img class="cell-icon" src="assets/additional/question-icon.png"
+                                                                alt="question-icon"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="middle-all">
+                                                            <p class="table-cell-heading">Most complicated question</p>
+                                                        </td>
+                                                    </tr>
 
-                                                <tr>
-                                                    <td class="middle-all">
-                                                        <div>
-                                                            <table
-                                                                style="margin: 0 auto; border-collapse: collapse !important; border-spacing: 0 !important;">
-                                                                <tr>
-                                                                    <td>
-                                                                        <p class="cell-topic-quote"><span class="cell-topic-quote-text">50 %</span>
-                                                                        </p>
-                                                                        <p class="cell-topic-subqoute">incorrect answers</p>
-                                                                    </td>
-                                                                </tr>
-                                                            </table>
-                                                        </div>
-                                                    </td>
-                                                </tr>
+                                                    <tr>
+                                                        <td class="middle-all">
+                                                            <div>
+                                                                <table
+                                                                    style="margin: 0 auto; border-collapse: collapse !important; border-spacing: 0 !important;">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <p class="cell-topic-quote"><span class="cell-topic-quote-text">50
+                                                                                    %</span>
+                                                                            </p>
+                                                                            <p class="cell-topic-subqoute">incorrect answers</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
 
-                                                <tr>
-                                                    <td>
-                                                        <p class="cell-question-link">
-                                                            <a class="cell-question-link-text" href="#">Is it possible to visually determine the
-                                                                degree...</a>
-                                                        </p>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                    </td>
-                                </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p class="cell-question-link">
+                                                                <a class="cell-question-link-text" href="#">Is it possible to visually determine the
+                                                                    degree...</a>
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
 
-                                <tr>
-                                    <td class="dashed-table-cell">
-                                        <div>
-                                            <table>
-                                                <tr>
-                                                    <td class="middle-all"><img class="cell-icon" src="assets/additional/dish-icon.png"
-                                                            alt="dish-icon"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="middle-all">
-                                                        <p class="table-cell-heading">Top view dish</p>
-                                                    </td>
-                                                </tr>
+                            <div class="chart-mobile">
+                                <table class="dashed-table no-top-border no-bottom-border-md dashed-three">
+                                    <tr>
+                                        <td class="dashed-table-cell one">
+                                            <div>
+                                                <table>
+                                                    <tr>
+                                                        <td class="middle-all"><img class="cell-icon" src="assets/additional/question-icon.png"
+                                                                alt="question-icon"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="middle-all">
+                                                            <p class="table-cell-heading">Most complicated question</p>
+                                                        </td>
+                                                    </tr>
 
-                                                <tr>
-                                                    <td class="middle-all">
-                                                        <div>
-                                                            <table
-                                                                style="margin: 0 auto; border-collapse: collapse !important; border-spacing: 0 !important;">
-                                                                <tr>
-                                                                    <td style="text-align: center; padding-right: 7px;">
-                                                                        <img class="small-cell-icon" src="assets/additional/view-icon.png"
-                                                                            alt="view-icon">
-                                                                        <p class="cell-info-amnount">349</p>
-                                                                    </td>
-                                                                    <td style="text-align: center; padding-right: 7px;">
-                                                                        <img class="small-cell-icon" src="assets/additional/like-icon.png"
-                                                                            alt="like-icon">
-                                                                        <p class="cell-info-amnount">143</p>
-                                                                    </td>
-                                                                    <td style="text-align: center; padding-right: 7px;">
-                                                                        <img class="small-cell-icon" src="assets/additional/dislike-icon.png"
-                                                                            alt="dislike-icon">
-                                                                        <p class="cell-info-amnount">2</p>
-                                                                    </td>
-                                                                    <td style="text-align: center; padding-right: 0px;">
-                                                                        <img class="small-cell-icon" src="assets/additional/comment-icon.png"
-                                                                            alt="comment-icon">
-                                                                        <p class="cell-info-amnount">12</p>
-                                                                    </td>
-                                                                </tr>
-                                                            </table>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <p class="cell-question-link">
-                                                            <a class="cell-question-link-text" href="#">Strawberry vanilla cheesecake</a>
-                                                        </p>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                    </td>
-                                    <td class="dashed-table-cell">
-                                        <div>
-                                            <table>
-                                                <tr>
-                                                    <td class="middle-all"><img class="cell-icon" src="assets/additional/drink-icon.png"
-                                                            alt="drink-icon"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="middle-all">
-                                                        <p class="table-cell-heading tight-heading-cell">Top view drink</p>
-                                                    </td>
-                                                </tr>
+                                                    <tr>
+                                                        <td class="middle-all">
+                                                            <div>
+                                                                <table
+                                                                    style="margin: 0 auto; border-collapse: collapse !important; border-spacing: 0 !important;">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <p class="cell-topic-quote"><span class="cell-topic-quote-text">50
+                                                                                    %</span>
+                                                                            </p>
+                                                                            <p class="cell-topic-subqoute">incorrect answers</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
 
-                                                <tr>
-                                                    <td class="middle-all">
-                                                        <div>
-                                                            <table
-                                                                style="margin: 0 auto; border-collapse: collapse !important; border-spacing: 0 !important;">
-                                                                <tr>
-                                                                    <td style="text-align: center; padding-right: 7px;">
-                                                                        <img class="small-cell-icon" src="assets/additional/view-icon.png"
-                                                                            alt="view-icon">
-                                                                        <p class="cell-info-amnount">449</p>
-                                                                    </td>
-                                                                    <td style="text-align: center; padding-right: 7px;">
-                                                                        <img class="small-cell-icon" src="assets/additional/like-icon.png"
-                                                                            alt="like-icon">
-                                                                        <p class="cell-info-amnount">178</p>
-                                                                    </td>
-                                                                    <td style="text-align: center; padding-right: 7px;">
-                                                                        <img class="small-cell-icon" src="assets/additional/dislike-icon.png"
-                                                                            alt="dislike-icon">
-                                                                        <p class="cell-info-amnount">13</p>
-                                                                    </td>
-                                                                    <td style="text-align: center; padding-right: 0px;">
-                                                                        <img class="small-cell-icon" src="assets/additional/comment-icon.png"
-                                                                            alt="comment-icon">
-                                                                        <p class="cell-info-amnount">1</p>
-                                                                    </td>
-                                                                </tr>
-                                                            </table>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <p class="cell-question-link">
-                                                            <a class="cell-question-link-text" href="#">Coconut Latte with Oreo cookies</a>
-                                                        </p>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                    </td>
-                                    <td class="dashed-table-cell">
-                                        <div>
-                                            <table>
-                                                <tr>
-                                                    <td class="middle-all"><img class="cell-icon" src="assets/additional/document-icon.png"
-                                                            alt="document-icon"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="middle-all">
-                                                        <p class="table-cell-heading tight-heading-cell">Top view policy</p>
-                                                    </td>
-                                                </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p class="cell-question-link">
+                                                                <a class="cell-question-link-text" href="#">Is it possible to visually determine the
+                                                                    degree...</a>
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </td>
 
-                                                <tr>
-                                                    <td class="middle-all">
-                                                        <div>
-                                                            <table
-                                                                style="margin: 0 auto; border-collapse: collapse !important; border-spacing: 0 !important;">
-                                                                <tr>
-                                                                    <td style="text-align: center; padding-right: 7px;">
-                                                                        <img class="small-cell-icon" src="assets/additional/view-icon.png"
-                                                                            alt="view-icon">
-                                                                        <p class="cell-info-amnount">549</p>
-                                                                    </td>
-                                                                    <td style="text-align: center; padding-right: 7px;">
-                                                                        <img class="small-cell-icon" src="assets/additional/like-icon.png"
-                                                                            alt="like-icon">
-                                                                        <p class="cell-info-amnount">213</p>
-                                                                    </td>
-                                                                    <td style="text-align: center; padding-right: 7px;">
-                                                                        <img class="small-cell-icon" src="assets/additional/dislike-icon.png"
-                                                                            alt="dislike-icon">
-                                                                        <p class="cell-info-amnount">7</p>
-                                                                    </td>
-                                                                    <td style="text-align: center; padding-right: 0px;">
-                                                                        <img class="small-cell-icon" src="assets/additional/comment-icon.png"
-                                                                            alt="comment-icon">
-                                                                        <p class="cell-info-amnount">3</p>
-                                                                    </td>
-                                                                </tr>
-                                                            </table>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <p class="cell-question-link">
-                                                            <a class="cell-question-link-text" href="#">How to sell additional dishes to guests</a>
-                                                        </p>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
+                                        <td class="dashed-table-cell one left-dashed-border-md no-left-border-sm">
+                                            <div>
+                                                <table>
+                                                    <tr>
+                                                        <td class="middle-all"><img class="cell-icon" src="assets/additional/dish-icon.png"
+                                                                alt="dish-icon"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="middle-all">
+                                                            <p class="table-cell-heading short-dashed-heading">Top view dish</p>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="middle-all likes-on-dashed">
+                                                            <div>
+                                                                <table
+                                                                    style="margin: 0 auto; border-collapse: collapse !important; border-spacing: 0 !important;">
+                                                                    <tr>
+                                                                        <td style="text-align: center; padding-right: 7px;">
+                                                                            <img class="small-cell-icon" src="assets/additional/view-icon.png"
+                                                                                alt="view-icon">
+                                                                            <p class="cell-info-amnount">349</p>
+                                                                        </td>
+                                                                        <td style="text-align: center; padding-right: 7px;">
+                                                                            <img class="small-cell-icon" src="assets/additional/like-icon.png"
+                                                                                alt="like-icon">
+                                                                            <p class="cell-info-amnount">143</p>
+                                                                        </td>
+                                                                        <td style="text-align: center; padding-right: 7px;">
+                                                                            <img class="small-cell-icon" src="assets/additional/dislike-icon.png"
+                                                                                alt="dislike-icon">
+                                                                            <p class="cell-info-amnount">2</p>
+                                                                        </td>
+                                                                        <td style="text-align: center; padding-right: 0px;">
+                                                                            <img class="small-cell-icon" src="assets/additional/comment-icon.png"
+                                                                                alt="comment-icon">
+                                                                            <p class="cell-info-amnount">12</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p class="cell-question-link">
+                                                                <a class="cell-question-link-text" href="#">Strawberry vanilla cheesecake</a>
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div>
+                                <table class="dashed-table dashed-three no-top-border no-bottom-border">
+                                    <tr>
+                                        <td class="dashed-table-cell one chart-desktop">
+                                            <div>
+                                                <table>
+                                                    <tr>
+                                                        <td class="middle-all"><img class="cell-icon" src="assets/additional/dish-icon.png"
+                                                                alt="dish-icon"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="middle-all">
+                                                            <p class="table-cell-heading short-dashed-heading">Top view dish</p>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="middle-all likes-on-dashed">
+                                                            <div>
+                                                                <table
+                                                                    style="margin: 0 auto; border-collapse: collapse !important; border-spacing: 0 !important;">
+                                                                    <tr>
+                                                                        <td style="text-align: center; padding-right: 7px;">
+                                                                            <img class="small-cell-icon" src="assets/additional/view-icon.png"
+                                                                                alt="view-icon">
+                                                                            <p class="cell-info-amnount">349</p>
+                                                                        </td>
+                                                                        <td style="text-align: center; padding-right: 7px;">
+                                                                            <img class="small-cell-icon" src="assets/additional/like-icon.png"
+                                                                                alt="like-icon">
+                                                                            <p class="cell-info-amnount">143</p>
+                                                                        </td>
+                                                                        <td style="text-align: center; padding-right: 7px;">
+                                                                            <img class="small-cell-icon" src="assets/additional/dislike-icon.png"
+                                                                                alt="dislike-icon">
+                                                                            <p class="cell-info-amnount">2</p>
+                                                                        </td>
+                                                                        <td style="text-align: center; padding-right: 0px;">
+                                                                            <img class="small-cell-icon" src="assets/additional/comment-icon.png"
+                                                                                alt="comment-icon">
+                                                                            <p class="cell-info-amnount">12</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p class="cell-question-link">
+                                                                <a class="cell-question-link-text" href="#">Strawberry vanilla cheesecake</a>
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </td>
+                                        <td class="dashed-table-cell one dashed-center no-left-border-md no-right-border-md">
+                                            <div>
+                                                <table>
+                                                    <tr>
+                                                        <td class="middle-all"><img class="cell-icon" src="assets/additional/drink-icon.png"
+                                                                alt="drink-icon"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="middle-all">
+                                                            <p class="table-cell-heading tight-heading-cell">Top view drink</p>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="middle-all likes-on-dashed">
+                                                            <div>
+                                                                <table
+                                                                    style="margin: 0 auto; border-collapse: collapse !important; border-spacing: 0 !important;">
+                                                                    <tr>
+                                                                        <td style="text-align: center; padding-right: 7px;">
+                                                                            <img class="small-cell-icon" src="assets/additional/view-icon.png"
+                                                                                alt="view-icon">
+                                                                            <p class="cell-info-amnount">449</p>
+                                                                        </td>
+                                                                        <td style="text-align: center; padding-right: 7px;">
+                                                                            <img class="small-cell-icon" src="assets/additional/like-icon.png"
+                                                                                alt="like-icon">
+                                                                            <p class="cell-info-amnount">178</p>
+                                                                        </td>
+                                                                        <td style="text-align: center; padding-right: 7px;">
+                                                                            <img class="small-cell-icon" src="assets/additional/dislike-icon.png"
+                                                                                alt="dislike-icon">
+                                                                            <p class="cell-info-amnount">13</p>
+                                                                        </td>
+                                                                        <td style="text-align: center; padding-right: 0px;">
+                                                                            <img class="small-cell-icon" src="assets/additional/comment-icon.png"
+                                                                                alt="comment-icon">
+                                                                            <p class="cell-info-amnount">1</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p class="cell-question-link">
+                                                                <a class="cell-question-link-text" href="#">Coconut Latte with Oreo cookies</a>
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </td>
+                                        <td class="dashed-table-cell one left-dashed-border-md no-left-border-sm">
+                                            <div>
+                                                <table>
+                                                    <tr>
+                                                        <td class="middle-all"><img class="cell-icon" src="assets/additional/document-icon.png"
+                                                                alt="document-icon"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="middle-all">
+                                                            <p class="table-cell-heading tight-heading-cell">Top view policy</p>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="middle-all likes-on-dashed">
+                                                            <div>
+                                                                <table
+                                                                    style="margin: 0 auto; border-collapse: collapse !important; border-spacing: 0 !important;">
+                                                                    <tr>
+                                                                        <td style="text-align: center; padding-right: 7px;">
+                                                                            <img class="small-cell-icon" src="assets/additional/view-icon.png"
+                                                                                alt="view-icon">
+                                                                            <p class="cell-info-amnount">549</p>
+                                                                        </td>
+                                                                        <td style="text-align: center; padding-right: 7px;">
+                                                                            <img class="small-cell-icon" src="assets/additional/like-icon.png"
+                                                                                alt="like-icon">
+                                                                            <p class="cell-info-amnount">213</p>
+                                                                        </td>
+                                                                        <td style="text-align: center; padding-right: 7px;">
+                                                                            <img class="small-cell-icon" src="assets/additional/dislike-icon.png"
+                                                                                alt="dislike-icon">
+                                                                            <p class="cell-info-amnount">7</p>
+                                                                        </td>
+                                                                        <td style="text-align: center; padding-right: 0px;">
+                                                                            <img class="small-cell-icon" src="assets/additional/comment-icon.png"
+                                                                                alt="comment-icon">
+                                                                            <p class="cell-info-amnount">3</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <a class="cell-question-link-text" href="#">
+                                                                <p class="cell-question-link">
+                                                                    How to sell additional dishes to guests
+                                                                </p>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
                         </td>
                     </tr>
                     <!--  -->
