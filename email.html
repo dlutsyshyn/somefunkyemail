@@ -30,7 +30,7 @@
         }
 
         * {
-            -ms-text-size-adjust: 100% ;
+            -ms-text-size-adjust: 100%;
             -webkit-text-size-adjust: 100%;
             box-sizing: inherit;
         }
@@ -94,7 +94,7 @@
             background-color: #FFFFFF;
             padding-left: 30px;
             padding-right: 30px;
-            padding-bottom: 50px;
+            padding-bottom: 80px;
             padding-top: 10px;
             max-width: 700px;
             margin: 0 auto;
@@ -151,7 +151,11 @@
             color: #3F3F46;
         }
 
-        .report-date {
+        .report-dates {
+            color: #71717A;
+            margin: 0;
+            padding-top: 8px;
+            padding-bottom: 20px;
             font-size: 16px;
         }
 
@@ -234,7 +238,7 @@
         }
 
         .chart-mobile {
-            display: none !important;
+            display: none;
         }
 
         .activity-block-heading {
@@ -381,7 +385,10 @@
         }
 
         .user-side {
+            width: 41px;
+            height: 54px;
             margin-top: 19px;
+
         }
 
         .user-name-rating {
@@ -470,6 +477,8 @@
         }
 
         .user-stats-avatar {
+            width: 40px;
+            height: 40px;
             margin-left: 12px;
         }
 
@@ -570,7 +579,7 @@
             padding-bottom: 15px;
             padding-right: 35px;
             color: #FFFFFF;
-            background-color: #34D399;
+            background-color: #15C872;
             font-size: 16px;
             font-weight: 700;
             border-radius: 30px;
@@ -614,6 +623,24 @@
             font-weight: 500;
             margin-top: 3px;
             margin-bottom: 0px;
+        }
+
+        /* images dementions */
+
+        .company-logo {
+            width: 80px;
+            height: 80px;
+        }
+
+        .rating-three-icon {
+            width: 14px;
+            height: 10px;
+            margin-right: 4px;
+        }
+
+        .first-place-user {
+            width: 50px;
+            height: 71px;
         }
 
         /* funky classes - modifiers */
@@ -740,17 +767,33 @@
 
         @media (max-width: 720px) {
             .wrapper {
-                padding-left: 20px;
-                padding-right: 20px;
+                padding-left: 20px !important;
+                padding-right: 20px !important;
             }
         }
 
         @media (max-width: 700px) {
             .wrapper {
-                padding-left: 16px;
-                padding-right: 16px;
-                padding-bottom: 50px;
-                padding-top: 10px;
+                padding-left: 16px !important;
+                padding-right: 16px !important;
+                padding-bottom: 60px !important;
+                padding-top: 10px !important;
+            }
+
+            .report-heading {
+                font-size: 24px !important;
+            }
+
+            .report-dates {
+                font-size: 14px !important;
+            }
+
+            .report-assigned-to {
+                font-size: 14px !important;
+            }
+
+            .report-sub-heading {
+                font-size: 18px !important;
             }
 
             .chart-desktop {
@@ -759,40 +802,44 @@
 
             .chart-mobile {
                 display: block !important;
-                width: 100%;
-                margin: 0 auto;
+                width: 100% !important;
+                margin: 0 auto !important;
             }
 
             /* modifiers */
             .rigth-bottom-border {
-                border-right: 0;
-                border-bottom: 9px solid #FFFFFF;
+                border-right: 0 !important;
+                border-bottom: 9px solid #FFFFFF !important;
             }
 
             .center-on-mob {
-                text-align: center;
+                text-align: center !important;
             }
 
             .left-of-three {
-                border-right: none;
-                border-bottom: 8px solid #FFFFFF;
+                border-right: none !important;
+                border-bottom: 8px solid #FFFFFF !important;
             }
 
             .centered-of-three {
-                border-left: none;
-                border-right: none;
-                border-top: 8px;
-                border-bottom: 8px;
+                border-left: none !important;
+                border-right: none !important;
+                border-top: 8px !important;
+                border-bottom: 8px !important;
             }
 
             .right-of-three {
-                border-left: none;
-                border-top: 8px solid #FFFFFF;
+                border-left: none !important;
+                border-top: 8px solid #FFFFFF !important;
             }
 
             .one {
                 max-width: 100% !important;
             }
+
+            .main-link {
+                font-size: 14px !important;
+            } 
 
             .push-second-row-mobile {
                 padding-top: 20px;
@@ -821,9 +868,9 @@
 
         @media (max-width: 450px) {
             .dashed-three .one {
-                width: 100%;
-                height: auto;
-                max-height: 182px;
+                width: 100% !important;
+                height: auto !important;
+                max-height: 182px !important;
             }
 
             .no-left-border-sm {
@@ -837,30 +884,30 @@
 
 <body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #3F3F46;">
     <center style="width: 100%;">
-        <div class="wrapper">
+        <div style="font-family: 'Inter', sans-serif; background-color: #FFFFFF; padding-left: 30px; padding-right: 30px; padding-bottom: 80px; padding-top: 10px; max-width: 700px; margin: 0 auto;" class="wrapper">
             <!-- Тело письма -->
-            <div class="content-wrapper">
+            <div style="display: block;" class="content-wrapper">
                 <table cellspacing="0" cellpadding="0" width="100%"
                     style="border-collapse: collapse !important; border-spacing: 0 !important; margin: 0 auto;">
                     <!-- Лого компании -->
-                    <tr class="middle-all">
-                        <td valign="middle" class="col-12" style="padding-top: 10px; padding-bottom: 4px;">
-                            <img style="width: 80px; height: 80px;" src="assets/tomato.png" alt="company-logo">
+                    <tr class="middle-all" style="text-align: center;">
+                        <td valign="middle" class="col-12" style="width: 100%; padding-top: 10px; padding-bottom: 4px;">
+                            <img class="company-logo" src="assets/tomato.png" alt="company-logo">
                         </td>
                     </tr>
                     <!-- Заголовок письма -->
-                    <tr class="middle-all">
-                        <td class="col-12">
-                            <h1 class="report-heading">Weekly Summary</h1>
-                            <p class="report-dates" style="color: #71717A; margin: 0; padding-top: 8px; padding-bottom: 20px;">
+                    <tr class="middle-all" style="text-align: center;">
+                        <td class="col-12" style="width: 100%;">
+                            <h1 class="report-heading" style="font-size: 28px; margin: 0; color: #3F3F46;">Weekly Summary</h1>
+                            <p class="report-dates" style="color: #71717A; margin: 0; padding-top: 8px; padding-bottom: 20px; font-size: 16px;">
                                 <span>Monday, September 17th</span>&nbsp;-&nbsp;<span>Monday, September 24th</span>
                             </p>
                         </td>
                     </tr>
                     <!-- Краткая информация об отчете -->
-                    <tr class="col-12" style="background-color: #FAFAFA;">
+                    <tr class="col-12" style="width: 100%; background-color: #FAFAFA;">
                         <td>
-                            <div class="report-assigned-to">
+                            <div class="report-assigned-to" style="height: 100%; border-left: 3px solid #70EBBA; padding-top: 12px; padding-left: 8px; padding-bottom: 12px; padding-right: 8px; font-size: 15px;">
                                 <p style="margin-top: 0; margin-bottom: 20px;">👋🏻 Hello, <span>Alex</span>!</p>
                                 <p style="margin: 0;">Here's your Mr.Tomato weekly performance report in comparison to the week before.</p>
                                 <p style="margin-bottom: 0; margin-top: 20px;">
@@ -871,32 +918,32 @@
                         </td>
                     </tr>
                     <!-- Заголовок подраздела -->
-                    <tr class="col-12">
+                    <tr class="col-12" style="width: 100%;">
                         <td>
-                            <h3 class="report-sub-heading">General Statistic</h3>
+                            <h3 class="report-sub-heading" style="font-size: 20px; margin-bottom: 5px;">General Statistic</h3>
                         </td>
                     </tr>
                     <!-- Блок разделенный на три -->
-                    <tr class="col-12">
+                    <tr class="col-12" style="width: 100%;">
                         <td>
-                            <table class="three">
+                            <table class="three" style="border-spacing: 0px !important; width: 100%; text-align: center; font-size: 0;">
                                 <tr>
-                                    <td class="activity-block-side one left-of-three">
-                                        <table class="col-12 center-on-mob">
+                                    <td class="activity-block-side one left-of-three" style="width: 100%; max-width: 213px; display: inline-block; vertical-align: top; text-align: left; background: #FAFAFA; border-right: 4px solid #FFFFFF;">
+                                        <table class="col-12 center-on-mob" style="width: 100%;">
                                             <tr>
                                                 <td>
-                                                    <p class="activity-block-top-text">Avg. Session Duration</p>
+                                                    <p class="activity-block-top-text" style="color: #52525B; font-size: 12px; font-weight: 600; margin-top: 10px; text-transform: uppercase; margin-left: 5px;  margin-bottom: 0px;">Avg. Session Duration</p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p class="activity-block-center-text"><span>2.3 K</span></p>
+                                                    <p class="activity-block-center-text" style="color: #52525B; font-size: 36px; margin-top: 5px; margin-bottom: 0px; margin-left: 5px; font-weight: 600;"><span>2.3 K</span></p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p class="activity-block-bottom-text">
-                                                        <img style="margin-right: 4px;" src="assets/icon-success.png" alt="icon-top">
+                                                    <p class="activity-block-bottom-text" style="color: #52525B; font-size: 12px; font-weight: 500; margin-top: 5px; margin-left: 5px;">
+                                                        <img class="rating-three-icon" style="width: 14px; height: 10px; margin-right: 4px;" src=" assets/icon-success.png" alt="icon-top">
                                                         <span>32% more</span>
                                                         than week before
                                                     </p>
@@ -904,22 +951,22 @@
                                             </tr>
                                         </table>
                                     </td>
-                                    <td class="activity-block-side one centered-of-three">
-                                        <table class="col-12 center-on-mob">
+                                    <td class="activity-block-side one centered-of-three" style="background: #FAFAFA; width: 100%; max-width: 213px; display: inline-block; vertical-align: top; text-align: left;"> 
+                                        <table class="col-12 center-on-mob" style="width: 100%;">
                                             <tr>
                                                 <td>
-                                                    <p class="activity-block-top-text">Active Users</p>
+                                                    <p class="activity-block-top-text" style="color: #52525B; font-size: 12px; font-weight: 600; margin-top: 10px; text-transform: uppercase; margin-left: 5px;  margin-bottom: 0px;">Active Users</p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p class="activity-block-center-text"><span>54</span></p>
+                                                    <p class="activity-block-center-text" style="color: #52525B; font-size: 36px; margin-top: 5px; margin-bottom: 0px; margin-left: 5px; font-weight: 600;"><span>54</span></p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p class="activity-block-bottom-text">
-                                                        <img style="margin-right: 4px;" src="assets/icon-success.png" alt="icon-top">
+                                                    <p class="activity-block-bottom-text" style="color: #52525B; font-size: 12px; font-weight: 500; margin-top: 5px; margin-left: 5px;">
+                                                        <img class="rating-three-icon" style="width: 14px; height: 10px; margin-right: 4px;" src=" assets/icon-success.png" alt="icon-top">
                                                         <span>2 more</span>
                                                         than week before
                                                     </p>
@@ -927,22 +974,22 @@
                                             </tr>
                                         </table>
                                     </td>
-                                    <td class="activity-block-side one right-of-three">
-                                        <table class="col-12 center-on-mob">
+                                    <td class="activity-block-side one right-of-three" style="background: #FAFAFA;  border-left: 4px solid #FFFFFF; width: 100%; max-width: 213px; display: inline-block; vertical-align: top; text-align: left; ">
+                                        <table class="col-12 center-on-mob" style="width: 100%;">
                                             <tr>
                                                 <td>
-                                                    <p class="activity-block-top-text">avg. Practicing Hours</p>
+                                                    <p class="activity-block-top-text" style="color: #52525B; font-size: 12px; font-weight: 600; margin-top: 10px; text-transform: uppercase; margin-left: 5px;  margin-bottom: 0px;">avg. Practicing Hours</p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p class="activity-block-center-text"><span>237 h</span></p>
+                                                    <p class="activity-block-center-text" style="color: #52525B; font-size: 36px; margin-top: 5px; margin-bottom: 0px; margin-left: 5px; font-weight: 600;"><span>237 h</span></p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p class="activity-block-bottom-text">
-                                                        <img style="margin-right: 4px;" src="assets/icon-failure.png" alt="icon-top">
+                                                    <p class="activity-block-bottom-text" style="color: #52525B; font-size: 12px; font-weight: 500; margin-top: 5px; margin-left: 5px;">
+                                                        <img class="rating-three-icon" style="width: 14px; height: 10px; margin-right: 4px;" src=" assets/icon-failure.png" alt="icon-top">
                                                         <span>23% less</span>
                                                         than week before
                                                     </p>
@@ -955,49 +1002,49 @@
                         </td>
                     </tr>
                     <!-- Блок с текстом и графиком (график редерим на БЕКе) -->
-                    <tr class="col-12">
+                    <tr class="col-12" style="width: 100%;">
                         <td>
-                            <p class="quote-text">
+                            <p class="quote-text" style="color: #52525B; font-size: 14px; margin-bottom: 3px; text-transform: uppercase; font-weight: 600;">
                                 avg. Practicing Hours per day
                             </p>
-                            <p class="quote-subtext">
+                            <p class="quote-subtext" style="color: #A1A1AA; font-size: 10.5px; margin-top: 3px; margin-bottom: 16px;">
                                 Average amount of practicing hours per day based on all users
                             </p>
-                            <p class="qoute-chart-section">
-                                <img class="chart-desktop" src="assets/charts/chart-desktop.png" alt="chart-desktop">
-                                <img class="chart-mobile" src="assets/charts/chart-mobile.png" alt="chart-mobile">
+                            <p class="qoute-chart-section" style="margin-top: 5px; margin-bottom: 10px;">
+                                <img class="chart-desktop" style="display: block; width: 100%; margin: 0 auto;" src="assets/charts/chart-desktop.png" alt="chart-desktop">
+                                <img class="chart-mobile" style="display: none;" src="assets/charts/chart-mobile.png" alt="chart-mobile">
                             </p>
                         </td>
                     </tr>
                     <!-- Заголовок второго раздела -->
-                    <tr class="col-12">
+                    <tr class="col-12" style="width: 100%;">
                         <td>
-                            <h3 class="report-sub-heading">Activity</h3>
+                            <h3 class="report-sub-heading" style="font-size: 20px; margin-bottom: 5px;">Activity</h3>
                         </td>
                     </tr>
                     <!-- Второй раздел с тремя блоками в ряд -->
-                    <tr class="col-12">
+                    <tr class="col-12" style="width: 100%;">
                         <td>
-                            <table class="three">
+                            <table class="three" style="border-spacing: 0px !important; width: 100%; text-align: center; font-size: 0;">
                                 <tr>
-                                    <td class="activity-block-side one left-of-three">
-                                        <table class="col-12 center-on-mob">
+                                    <td class="activity-block-side one left-of-three" style="width: 100%; max-width: 213px; display: inline-block; vertical-align: top; text-align: left; background: #FAFAFA; border-right: 4px solid #FFFFFF;">
+                                        <table class="col-12 center-on-mob" style="width: 100%;">
                                             <tr>
                                                 <td>
-                                                    <p class="activity-block-top-text">Engagement</p>
+                                                    <p class="activity-block-top-text" style="color: #52525B; font-size: 12px; font-weight: 600; margin-top: 10px; text-transform: uppercase; margin-left: 5px;  margin-bottom: 0px;">Engagement</p>
                                                     <p class="activity-block-subheading">Percentage of team with active views, reactions, and streaks
                                                     </p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p class="activity-block-center-text"><span>64</span>%</p>
+                                                    <p class="activity-block-center-text" style="color: #52525B; font-size: 36px; margin-top: 5px; margin-bottom: 0px; margin-left: 5px; font-weight: 600;"><span>64</span>%</p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p class="activity-block-bottom-text">
-                                                        <img style="margin-right: 4px;" src="assets/icon-success.png" alt="icon-top">
+                                                    <p class="activity-block-bottom-text" style="color: #52525B; font-size: 12px; font-weight: 500; margin-top: 5px; margin-left: 5px;">
+                                                        <img class="rating-three-icon" style="width: 14px; height: 10px; margin-right: 4px;" src=" assets/icon-success.png" alt="icon-top">
                                                         <span>8% more</span>
                                                         than week before
                                                     </p>
@@ -1005,23 +1052,23 @@
                                             </tr>
                                         </table>
                                     </td>
-                                    <td class="activity-block-side one centered-of-three">
-                                        <table class="col-12 center-on-mob">
+                                    <td class="activity-block-side one centered-of-three" style="background: #FAFAFA; width: 100%; max-width: 213px; display: inline-block; vertical-align: top; text-align: left;">
+                                        <table class="col-12 center-on-mob" style="width: 100%;">
                                             <tr>
                                                 <td>
-                                                    <p class="activity-block-top-text">Practice</p>
+                                                    <p class="activity-block-top-text" style="color: #52525B; font-size: 12px; font-weight: 600; margin-top: 10px; text-transform: uppercase; margin-left: 5px;  margin-bottom: 0px;">Practice</p>
                                                     <p class="activity-block-subheading">Percentage of correct answers from team members</p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p class="activity-block-center-text"><span>55</span>%</p>
+                                                    <p class="activity-block-center-text" style="color: #52525B; font-size: 36px; margin-top: 5px; margin-bottom: 0px; margin-left: 5px; font-weight: 600;"><span>55</span>%</p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p class="activity-block-bottom-text">
-                                                        <img style="margin-right: 4px;" src="assets/icon-success.png" alt="icon-top">
+                                                    <p class="activity-block-bottom-text" style="color: #52525B; font-size: 12px; font-weight: 500; margin-top: 5px; margin-left: 5px;">
+                                                        <img class="rating-three-icon" style="width: 14px; height: 10px; margin-right: 4px;" src=" assets/icon-success.png" alt="icon-top">
                                                         <span>6% more</span>
                                                         than week before
                                                     </p>
@@ -1029,24 +1076,24 @@
                                             </tr>
                                         </table>
                                     </td>
-                                    <td class="activity-block-side one right-of-three">
-                                        <table class="col-12 center-on-mob">
+                                    <td class="activity-block-side one right-of-three" style="background: #FAFAFA;  border-left: 4px solid #FFFFFF; width: 100%; max-width: 213px; display: inline-block; vertical-align: top; text-align: left; ">
+                                        <table class="col-12 center-on-mob" style="width: 100%;">
                                             <tr>
                                                 <td>
-                                                    <p class="activity-block-top-text">Test</p>
+                                                    <p class="activity-block-top-text" style="color: #52525B; font-size: 12px; font-weight: 600; margin-top: 10px; text-transform: uppercase; margin-left: 5px;  margin-bottom: 0px;">Test</p>
                                                     <p class="activity-block-subheading">Percentage of successfully passed tests from the entire team
                                                     </p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p class="activity-block-center-text"><span>24</span>%</p>
+                                                    <p class="activity-block-center-text" style="color: #52525B; font-size: 36px; margin-top: 5px; margin-bottom: 0px; margin-left: 5px; font-weight: 600;"><span>24</span>%</p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p class="activity-block-bottom-text">
-                                                        <img style="margin-right: 4px;" src="assets/icon-failure.png" alt="icon-top">
+                                                    <p class="activity-block-bottom-text" style="color: #52525B; font-size: 12px; font-weight: 500; margin-top: 5px; margin-left: 5px;">
+                                                        <img class="rating-three-icon" style="width: 14px; height: 10px; margin-right: 4px;" src=" assets/icon-failure.png" alt="icon-top">
                                                         <span>3% less</span>
                                                         than week before
                                                     </p>
@@ -1060,13 +1107,13 @@
                     </tr>
 
                     <!-- Раздел с локациями -->
-                    <tr class="col-12">
+                    <tr class="col-12" style="width: 100%;">
                         <td>
                             <div class="pt-4">
                                 <table class="two">
                                     <tr>
                                         <td class="success-stat-block rigth-bottom-border one pb-3 fixed-stats">
-                                            <table class="col-12">
+                                            <table class="col-12" style="width: 100%;">
                                                 <tr>
                                                     <td>
                                                         <h4 class="success-stat-heading">Top active locations</h4>
@@ -1196,7 +1243,7 @@
                                             </table>
                                         </td>
                                         <td class="failure-stat-block one pb-3 fixed-stats">
-                                            <table class="col-12">
+                                            <table class="col-12" style="width: 100%;">
                                                 <tr>
                                                     <td>
                                                         <h4 class="failure-stat-heading">Less active locations</h4>
@@ -1337,7 +1384,7 @@
                                 <table class="two">
                                     <tr>
                                         <td class="success-stat-block rigth-bottom-border one pb-3 fixed-stats-extend">
-                                            <table class="col-12">
+                                            <table class="col-12" style="width: 100%;">
                                                 <tr>
                                                     <td>
                                                         <h4 class="success-stat-heading">Top active users</h4>
@@ -1348,11 +1395,11 @@
                                                 <tr>
                                                     <td>
                                                         <div>
-                                                            <table class="col-12">
+                                                            <table class="col-12" style="width: 100%;">
                                                                 <tr>
                                                                     <td class="top-three-one">
                                                                         <div>
-                                                                            <table class="col-12">
+                                                                            <table class="col-12" style="width: 100%;">
                                                                                 <tr>
                                                                                     <td class="user-rating-photo">
                                                                                         <img class="user-side" src="assets/photos/user-rating-1.png"
@@ -1387,10 +1434,11 @@
                                                                     </td>
                                                                     <td class="top-three-one">
                                                                         <div>
-                                                                            <table class="col-12">
+                                                                            <table class="col-12" style="width: 100%;">
                                                                                 <tr>
                                                                                     <td class="user-rating-photo">
-                                                                                        <img src="assets/photos/user-rating-2.png" alt="user-2">
+                                                                                        <img class="first-place-user"
+                                                                                            src="assets/photos/user-rating-2.png" alt="user-2">
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
@@ -1420,7 +1468,7 @@
                                                                     </td>
                                                                     <td class="top-three-one">
                                                                         <div>
-                                                                            <table class="col-12">
+                                                                            <table class="col-12" style="width: 100%;">
                                                                                 <tr>
                                                                                     <td class="user-rating-photo">
                                                                                         <img class="user-side" src="assets/photos/user-rating-3.png"
@@ -1513,7 +1561,7 @@
                                         </td>
 
                                         <td class="failure-stat-block one pb-3 fixed-stats-extend">
-                                            <table class="col-12">
+                                            <table class="col-12" style="width: 100%;">
                                                 <tr>
                                                     <td>
                                                         <h4 class="failure-stat-heading">Less active locations</h4>
@@ -1660,13 +1708,13 @@
                         </td>
                     </tr>
                     <!-- Заголовок третьего раздела -->
-                    <tr class="col-12">
+                    <tr class="col-12" style="width: 100%;">
                         <td>
-                            <h3 class="report-sub-heading">Hightlights</h3>
+                            <h3 class="report-sub-heading" style="font-size: 20px; margin-bottom: 5px;">Hightlights</h3>
                         </td>
                     </tr>
                     <!-- Табличка Хайлайтс (6 ячеек) -->
-                    <tr class="col-12">
+                    <tr class="col-12" style="width: 100%;">
                         <td>
                             <div>
                                 <table class="dashed-table dashed-three no-bottom-border">
@@ -1675,11 +1723,11 @@
                                             <div>
                                                 <table>
                                                     <tr>
-                                                        <td class="middle-all"><img class="cell-icon" src="assets/additional/star-icon.png"
+                                                        <td class="middle-all" style="text-align: center;"><img class="cell-icon" src="assets/additional/star-icon.png"
                                                                 alt="start-icon"></td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="middle-all">
+                                                        <td class="middle-all" style="text-align: center;">
                                                             <p class="table-cell-heading tight-heading-cell">Top Rated Post</p>
                                                         </td>
                                                     </tr>
@@ -1730,17 +1778,17 @@
                                             <div>
                                                 <table>
                                                     <tr>
-                                                        <td class="middle-all"><img class="cell-icon" src="assets/additional/checklist-icon.png"
+                                                        <td class="middle-all" style="text-align: center;"><img class="cell-icon" src="assets/additional/checklist-icon.png"
                                                                 alt="checklist-icon"></td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="middle-all">
+                                                        <td class="middle-all" style="text-align: center;">
                                                             <p class="table-cell-heading">Most complicated checklist</p>
                                                         </td>
                                                     </tr>
 
                                                     <tr>
-                                                        <td class="middle-all">
+                                                        <td class="middle-all" style="text-align: center;">
                                                             <div>
                                                                 <table
                                                                     style="margin: 0 auto; border-collapse: collapse !important; border-spacing: 0 !important;">
@@ -1771,17 +1819,17 @@
                                             <div>
                                                 <table>
                                                     <tr>
-                                                        <td class="middle-all"><img class="cell-icon" src="assets/additional/question-icon.png"
+                                                        <td class="middle-all" style="text-align: center;"><img class="cell-icon" src="assets/additional/question-icon.png"
                                                                 alt="question-icon"></td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="middle-all">
+                                                        <td class="middle-all" style="text-align: center;">
                                                             <p class="table-cell-heading">Most complicated question</p>
                                                         </td>
                                                     </tr>
 
                                                     <tr>
-                                                        <td class="middle-all">
+                                                        <td class="middle-all" style="text-align: center;">
                                                             <div>
                                                                 <table
                                                                     style="margin: 0 auto; border-collapse: collapse !important; border-spacing: 0 !important;">
@@ -1813,24 +1861,24 @@
                                 </table>
                             </div>
 
-                            <div class="chart-mobile">
+                            <div class="chart-mobile" style="display: none;">
                                 <table class="dashed-table no-top-border no-bottom-border-md dashed-three">
                                     <tr>
                                         <td class="dashed-table-cell one">
                                             <div>
                                                 <table>
                                                     <tr>
-                                                        <td class="middle-all"><img class="cell-icon" src="assets/additional/question-icon.png"
+                                                        <td class="middle-all" style="text-align: center;"><img class="cell-icon" src="assets/additional/question-icon.png"
                                                                 alt="question-icon"></td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="middle-all">
+                                                        <td class="middle-all" style="text-align: center;">
                                                             <p class="table-cell-heading">Most complicated question</p>
                                                         </td>
                                                     </tr>
 
                                                     <tr>
-                                                        <td class="middle-all">
+                                                        <td class="middle-all" style="text-align: center;">
                                                             <div>
                                                                 <table
                                                                     style="margin: 0 auto; border-collapse: collapse !important; border-spacing: 0 !important;">
@@ -1863,11 +1911,11 @@
                                             <div>
                                                 <table>
                                                     <tr>
-                                                        <td class="middle-all"><img class="cell-icon" src="assets/additional/dish-icon.png"
+                                                        <td class="middle-all" style="text-align: center;"><img class="cell-icon" src="assets/additional/dish-icon.png"
                                                                 alt="dish-icon"></td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="middle-all">
+                                                        <td class="middle-all" style="text-align: center;">
                                                             <p class="table-cell-heading short-dashed-heading">Top view dish</p>
                                                         </td>
                                                     </tr>
@@ -1924,11 +1972,11 @@
                                             <div>
                                                 <table>
                                                     <tr>
-                                                        <td class="middle-all"><img class="cell-icon" src="assets/additional/dish-icon.png"
+                                                        <td class="middle-all" style="text-align: center;"><img class="cell-icon" src="assets/additional/dish-icon.png"
                                                                 alt="dish-icon"></td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="middle-all">
+                                                        <td class="middle-all" style="text-align: center;">
                                                             <p class="table-cell-heading short-dashed-heading">Top view dish</p>
                                                         </td>
                                                     </tr>
@@ -1978,11 +2026,11 @@
                                             <div>
                                                 <table>
                                                     <tr>
-                                                        <td class="middle-all"><img class="cell-icon" src="assets/additional/drink-icon.png"
+                                                        <td class="middle-all" style="text-align: center;"><img class="cell-icon" src="assets/additional/drink-icon.png"
                                                                 alt="drink-icon"></td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="middle-all">
+                                                        <td class="middle-all" style="text-align: center;">
                                                             <p class="table-cell-heading tight-heading-cell">Top view drink</p>
                                                         </td>
                                                     </tr>
@@ -2032,11 +2080,11 @@
                                             <div>
                                                 <table>
                                                     <tr>
-                                                        <td class="middle-all"><img class="cell-icon" src="assets/additional/document-icon.png"
+                                                        <td class="middle-all" style="text-align: center;"><img class="cell-icon" src="assets/additional/document-icon.png"
                                                                 alt="document-icon"></td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="middle-all">
+                                                        <td class="middle-all" style="text-align: center;">
                                                             <p class="table-cell-heading tight-heading-cell">Top view policy</p>
                                                         </td>
                                                     </tr>
@@ -2090,7 +2138,7 @@
                         </td>
                     </tr>
                     <!--  -->
-                    <tr class="col-12">
+                    <tr class="col-12" style="width: 100%;">
                         <td style="text-align: center; padding-top: 35px;">
                             <a class="main-link" href="#">Go to Dashboard</a>
                         </td>
