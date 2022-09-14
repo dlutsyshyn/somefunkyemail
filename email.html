@@ -694,11 +694,11 @@
         .dashed-three .one {
             width: 50%;
             border-bottom: 2px dashed #D4D4D8;
-            max-width: 188px;
+            max-width: 186.5px;
             display: inline-block;
             vertical-align: top;
             text-align: center;
-            max-height: 175px;
+            height: 166.5px;
         }
 
         .centered-of-three {
@@ -777,7 +777,7 @@
             .wrapper {
                 padding-left: 16px !important;
                 padding-right: 16px !important;
-                padding-bottom: 60px !important;
+                padding-bottom: 90px !important;
                 padding-top: 10px !important;
             }
 
@@ -790,7 +790,7 @@
                 padding-left: 0px !important;
                 padding-right: 0px !important;
                 padding-bottom: 0px !important;
-                width: 33.33333%;
+                max-width: 49.33333% !important;
             }
 
             .report-heading {
@@ -846,7 +846,11 @@
                 border-top: 8px solid #FFFFFF !important;
             }
 
-            .one {
+            .three .one {
+                max-width: 100% !important;
+            }
+
+            .two .one {
                 max-width: 100% !important;
             }
 
@@ -888,9 +892,9 @@
 
         @media (max-width: 450px) {
             .dashed-three .one {
+                max-width: 100% !important;
+                display: block !important;
                 width: 100% !important;
-                height: auto !important;
-                max-height: 182px !important;
             }
 
             .no-left-border-sm {
@@ -1626,7 +1630,7 @@
                                 <table class="two" style="border-spacing: 0px !important; width: 100%; text-align: center; font-size: 0;">
                                     <tr>
                                         <td class="success-stat-block rigth-bottom-border one pb-3 fixed-stats-extend"
-                                            style="background-color: #F5FDF9; border-right: 8px solid #FFFFFF; padding-bottom: 12px; width: 100%; max-width: 314px; display: inline-block; vertical-align: top; text-align: left; min-height: 358px;">
+                                            style="background-color: #F5FDF9; border-right: 8px solid #FFFFFF; padding-bottom: 12px; width: 100%; max-width: 314px; display: inline-block; vertical-align: top; text-align: left; min-height: 358px; max-height: 358px;">
                                             <table class="col-12" style="width: 100%;">
                                                 <tr>
                                                     <td>
@@ -1649,7 +1653,7 @@
                                                                             <table class="col-12" style="width: 100%;">
                                                                                 <tr>
                                                                                     <td class="user-rating-photo"
-                                                                                        style="vertical-align: bottom; padding: 12px; text-align: center; padding-bottom: 2px; padding-top: 10px;">
+                                                                                        style="vertical-align: bottom; padding: 12px; text-align: center; padding-bottom: 2px; padding-top: 15px;">
                                                                                         <img class="user-side"
                                                                                             style="width: 41px; height: 54px; margin-top: 19px;"
                                                                                             src="assets/photos/user-rating-1.png" alt="user-1">
@@ -1695,7 +1699,7 @@
                                                                             <table class="col-12" style="width: 100%;">
                                                                                 <tr>
                                                                                     <td class="user-rating-photo"
-                                                                                        style="vertical-align: bottom; padding: 12px; text-align: center; padding-bottom: 2px; padding-top: 10px;">
+                                                                                        style="vertical-align: bottom; padding: 12px; text-align: center; padding-bottom: 2px; padding-top: 15px;">
                                                                                         <img class="first-place-user"
                                                                                             style="width: 50px; height: 71px;"
                                                                                             src="assets/photos/user-rating-2.png" alt="user-2">
@@ -1741,7 +1745,7 @@
                                                                             <table class="col-12" style="width: 100%;">
                                                                                 <tr>
                                                                                     <td class="user-rating-photo"
-                                                                                        style="vertical-align: bottom; padding: 12px; text-align: center; padding-bottom: 2px; padding-top: 10px;">
+                                                                                        style="vertical-align: bottom; padding: 12px; text-align: center; padding-bottom: 2px; padding-top: 15px;">
                                                                                         <img class="user-side"
                                                                                             style="width: 41px; height: 54px; margin-top: 19px;"
                                                                                             src="assets/photos/user-rating-3.png" alt="user-3">
@@ -1790,7 +1794,7 @@
 
                                                 <tr>
                                                     <td>
-                                                        <div style="margin-bottom: 8px; margin-top: 22px;">
+                                                        <div style="margin-bottom: 8px; margin-top: 26px;">
                                                             <table
                                                                 style="border-collapse: collapse !important; border-spacing: 0 !important; width: 100%;">
                                                                 <tr>
@@ -1868,7 +1872,7 @@
                                         </td>
 
                                         <td class="failure-stat-block one pb-3 fixed-stats-extend"
-                                            style="background-color: #FEF9F9; width: 100%; max-width: 314px; display: inline-block; vertical-align: top; text-align: left; padding-bottom: 12px; min-height: 358px;">
+                                            style="background-color: #FEF9F9; width: 100%; max-width: 314px; display: inline-block; vertical-align: top; text-align: left; padding-bottom: 12px; min-height: 358px; max-height: 358px;">
                                             <table class="col-12" style="width: 100%;">
                                                 <tr>
                                                     <td>
@@ -2094,7 +2098,7 @@
                                     style="border: 2px dashed #D4D4D8; border-collapse: collapse !important; border-spacing: 0px !important; border-spacing: 0px !important; width: 100%; text-align: center; font-size: 0; border-bottom: none !important;">
                                     <tr>
                                         <td class="dashed-table-cell one"
-                                            style="padding-top: 8px; padding-left: 12px; padding-right: 12px; padding-bottom: 12px; width: 33.33333%; width: 50%; border-bottom: 2px dashed #D4D4D8; max-width: 188px; display: inline-block; vertical-align: top; text-align: center; max-height: 175px;">
+                                            style="padding-top: 8px; padding-left: 12px; padding-right: 12px; padding-bottom: 12px; width: 33.33333%; width: 50%; border-bottom: 2px dashed #D4D4D8; max-width: 186.5px; display: inline-block; vertical-align: top; text-align: center; height: 166.5px;">
                                             <div>
                                                 <table>
                                                     <tr>
@@ -2152,7 +2156,7 @@
                                                     <tr>
                                                         <td>
                                                             <p class="cell-question-link"
-                                                                style="width: 100%; background: #FAFAFA; text-align: center; padding: 8px; border-radius: 2px; margin-top: 2px; margin-bottom: 0; max-height: 56px; max-width: 177px; text-overflow: ellipsis; overflow: hidden; word-break: break-word;">
+                                                                style="width: 100%; background: #FAFAFA; text-align: center; padding: 8px; border-radius: 2px; margin-top: 2px; margin-bottom: 0; max-height: 56px; max-width: 168px; text-overflow: ellipsis; overflow: hidden; word-break: break-word;">
                                                                 <a class="cell-question-link-text"
                                                                     style="text-decoration: underline; color: #52525B !important; font-weight: 400; font-size: 14px; max-width: 150px; text-overflow: ellipsis; max-height: 35px;"
                                                                     href="#">Restaurant Atmosphere and its
@@ -2164,7 +2168,7 @@
                                             </div>
                                         </td>
                                         <td class="dashed-table-cell one dashed-center no-right-border-md no-left-border-sm"
-                                            style="padding-top: 8px; padding-left: 12px; padding-right: 12px; padding-bottom: 12px; width: 33.33333%; width: 50%; border-bottom: 2px dashed #D4D4D8; max-width: 188px; display: inline-block; vertical-align: top; text-align: center; max-height: 175px; border-left: 2px dashed #D4D4D8; border-right: 2px dashed #D4D4D8;">
+                                            style="padding-top: 8px; padding-left: 12px; padding-right: 12px; padding-bottom: 12px; width: 33.33333%; width: 50%; border-bottom: 2px dashed #D4D4D8; max-width: 186.5px; display: inline-block; vertical-align: top; text-align: center; height: 166.5px; border-left: 2px dashed #D4D4D8; border-right: 2px dashed #D4D4D8;">
                                             <div>
                                                 <table>
                                                     <tr>
@@ -2205,7 +2209,7 @@
                                                     <tr>
                                                         <td>
                                                             <p class="cell-question-link"
-                                                                style="width: 100%; background: #FAFAFA; text-align: center; padding: 8px; border-radius: 2px; margin-top: 2px; margin-bottom: 0; max-height: 56px; max-width: 177px; text-overflow: ellipsis; overflow: hidden; word-break: break-word;">
+                                                                style="width: 100%; background: #FAFAFA; text-align: center; padding: 8px; border-radius: 2px; margin-top: 2px; margin-bottom: 0; max-height: 56px; max-width: 168px; text-overflow: ellipsis; overflow: hidden; word-break: break-word;">
                                                                 <a class="cell-question-link-text"
                                                                     style="text-decoration: underline; color: #52525B !important; font-weight: 400; font-size: 14px; max-width: 150px; text-overflow: ellipsis; max-height: 35px;"
                                                                     href="#">Cleaning checklist for kitchen and fridge
@@ -2217,7 +2221,7 @@
                                             </div>
                                         </td>
                                         <td class="dashed-table-cell one chart-desktop"
-                                            style="padding-top: 8px; padding-left: 12px; padding-right: 12px; padding-bottom: 12px; width: 33.33333%; width: 50%; border-bottom: 2px dashed #D4D4D8; max-width: 188px; display: inline-block; vertical-align: top; text-align: center; max-height: 175px; width: 100%; margin: 0 auto;">
+                                            style="padding-top: 8px; padding-left: 12px; padding-right: 12px; padding-bottom: 12px; width: 33.33333%; width: 50%; border-bottom: 2px dashed #D4D4D8; max-width: 186.5px; display: inline-block; vertical-align: top; text-align: center; height: 166.5px; width: 100%; margin: 0 auto;">
                                             <div>
                                                 <table>
                                                     <tr>
@@ -2259,7 +2263,7 @@
                                                     <tr>
                                                         <td>
                                                             <p class="cell-question-link"
-                                                                style="width: 100%; background: #FAFAFA; text-align: center; padding: 8px; border-radius: 2px; margin-top: 2px; margin-bottom: 0; max-height: 56px; max-width: 177px; text-overflow: ellipsis; overflow: hidden; word-break: break-word;">
+                                                                style="width: 100%; background: #FAFAFA; text-align: center; padding: 8px; border-radius: 2px; margin-top: 2px; margin-bottom: 0; max-height: 56px; max-width: 168px; text-overflow: ellipsis; overflow: hidden; word-break: break-word;">
                                                                 <a class="cell-question-link-text"
                                                                     style="text-decoration: underline; color: #52525B !important; font-weight: 400; font-size: 14px; max-width: 150px; text-overflow: ellipsis; max-height: 35px;"
                                                                     href="#">Is it possible to visually determine the
@@ -2279,7 +2283,7 @@
                                     style="border: 2px dashed #D4D4D8; border-collapse: collapse !important; border-spacing: 0px !important; border-top: none !important; border-spacing: 0px !important; width: 100%; text-align: center; font-size: 0;">
                                     <tr>
                                         <td class="dashed-table-cell one"
-                                            style="padding-top: 8px; padding-left: 12px; padding-right: 12px; padding-bottom: 12px; width: 33.33333%; width: 50%; border-bottom: 2px dashed #D4D4D8; max-width: 188px; display: inline-block; vertical-align: top; text-align: center; max-height: 175px;">
+                                            style="padding-top: 8px; padding-left: 12px; padding-right: 12px; padding-bottom: 12px; width: 33.33333%; width: 50%; border-bottom: 2px dashed #D4D4D8; max-width: 186.5px; display: inline-block; vertical-align: top; text-align: center; height: 166.5px;">
                                             <div>
                                                 <table>
                                                     <tr>
@@ -2321,7 +2325,7 @@
                                                     <tr>
                                                         <td>
                                                             <p class="cell-question-link"
-                                                                style="width: 100%; background: #FAFAFA; text-align: center; padding: 8px; border-radius: 2px; margin-top: 2px; margin-bottom: 0; max-height: 56px; max-width: 177px; text-overflow: ellipsis; overflow: hidden; word-break: break-word;">
+                                                                style="width: 100%; background: #FAFAFA; text-align: center; padding: 8px; border-radius: 2px; margin-top: 2px; margin-bottom: 0; max-height: 56px; max-width: 168px; text-overflow: ellipsis; overflow: hidden; word-break: break-word;">
                                                                 <a class="cell-question-link-text"
                                                                     style="text-decoration: underline; color: #52525B !important; font-weight: 400; font-size: 14px; max-width: 150px; text-overflow: ellipsis; max-height: 35px;"
                                                                     href="#">Is it possible to visually determine the
@@ -2334,7 +2338,7 @@
                                         </td>
 
                                         <td class="dashed-table-cell one left-dashed-border-md no-left-border-sm"
-                                            style="padding-top: 8px; padding-left: 12px; padding-right: 12px; padding-bottom: 12px; width: 33.33333%; width: 50%; border-bottom: 2px dashed #D4D4D8; max-width: 188px; display: inline-block; vertical-align: top; text-align: center; max-height: 175px;">
+                                            style="padding-top: 8px; padding-left: 12px; padding-right: 12px; padding-bottom: 12px; width: 33.33333%; width: 50%; border-bottom: 2px dashed #D4D4D8; max-width: 186.5px; display: inline-block; vertical-align: top; text-align: center; height: 166.5px;">
                                             <div>
                                                 <table>
                                                     <tr>
@@ -2390,7 +2394,7 @@
                                                     <tr>
                                                         <td>
                                                             <p class="cell-question-link"
-                                                                style="width: 100%; background: #FAFAFA; text-align: center; padding: 8px; border-radius: 2px; margin-top: 2px; margin-bottom: 0; max-height: 56px; max-width: 177px; text-overflow: ellipsis; overflow: hidden; word-break: break-word;">
+                                                                style="width: 100%; background: #FAFAFA; text-align: center; padding: 8px; border-radius: 2px; margin-top: 2px; margin-bottom: 0; max-height: 56px; max-width: 168px; text-overflow: ellipsis; overflow: hidden; word-break: break-word;">
                                                                 <a class="cell-question-link-text"
                                                                     style="text-decoration: underline; color: #52525B !important; font-weight: 400; font-size: 14px; max-width: 150px; text-overflow: ellipsis; max-height: 35px;"
                                                                     href="#">Strawberry vanilla cheesecake</a>
@@ -2409,7 +2413,7 @@
                                     style="border: 2px dashed #D4D4D8; border-collapse: collapse !important; border-spacing: 0px !important; border-spacing: 0px !important; width: 100%; text-align: center; font-size: 0; border-top: none !important; border-bottom: none !important;">
                                     <tr>
                                         <td class="dashed-table-cell one chart-desktop"
-                                            style="padding-top: 8px; padding-left: 12px; padding-right: 12px; padding-bottom: 12px; width: 33.33333%; width: 50%; border-bottom: 2px dashed #D4D4D8; max-width: 188px; display: inline-block; vertical-align: top; text-align: center; max-height: 175px; width: 100%; margin: 0 auto;">
+                                            style="padding-top: 8px; padding-left: 12px; padding-right: 12px; padding-bottom: 12px; width: 33.33333%; width: 50%; border-bottom: 2px dashed #D4D4D8; max-width: 186.5px; display: inline-block; vertical-align: top; text-align: center; height: 166.5px; width: 100%; margin: 0 auto;">
                                             <div>
                                                 <table>
                                                     <tr>
@@ -2465,7 +2469,7 @@
                                                     <tr>
                                                         <td>
                                                             <p class="cell-question-link"
-                                                                style="width: 100%; background: #FAFAFA; text-align: center; padding: 8px; border-radius: 2px; margin-top: 2px; margin-bottom: 0; max-height: 56px; max-width: 177px; text-overflow: ellipsis; overflow: hidden; word-break: break-word;">
+                                                                style="width: 100%; background: #FAFAFA; text-align: center; padding: 8px; border-radius: 2px; margin-top: 2px; margin-bottom: 0; max-height: 56px; max-width: 168px; text-overflow: ellipsis; overflow: hidden; word-break: break-word;">
                                                                 <a class="cell-question-link-text"
                                                                     style="text-decoration: underline; color: #52525B !important; font-weight: 400; font-size: 14px; max-width: 150px; text-overflow: ellipsis; max-height: 35px;"
                                                                     href="#">Strawberry vanilla cheesecake</a>
@@ -2476,7 +2480,7 @@
                                             </div>
                                         </td>
                                         <td class="dashed-table-cell one dashed-center no-left-border-md no-right-border-md"
-                                            style="padding-top: 8px; padding-left: 12px; padding-right: 12px; padding-bottom: 12px; width: 33.33333%; width: 50%; border-bottom: 2px dashed #D4D4D8; max-width: 188px; display: inline-block; vertical-align: top; text-align: center; max-height: 175px; border-left: 2px dashed #D4D4D8; border-right: 2px dashed #D4D4D8;">
+                                            style="padding-top: 8px; padding-left: 12px; padding-right: 12px; padding-bottom: 12px; width: 33.33333%; width: 50%; border-bottom: 2px dashed #D4D4D8; max-width: 186.5px; display: inline-block; vertical-align: top; text-align: center; height: 166.5px; border-left: 2px dashed #D4D4D8; border-right: 2px dashed #D4D4D8;">
                                             <div>
                                                 <table>
                                                     <tr>
@@ -2534,7 +2538,7 @@
                                                     <tr>
                                                         <td>
                                                             <p class="cell-question-link"
-                                                                style="width: 100%; background: #FAFAFA; text-align: center; padding: 8px; border-radius: 2px; margin-top: 2px; margin-bottom: 0; max-height: 56px; max-width: 177px; text-overflow: ellipsis; overflow: hidden; word-break: break-word;">
+                                                                style="width: 100%; background: #FAFAFA; text-align: center; padding: 8px; border-radius: 2px; margin-top: 2px; margin-bottom: 0; max-height: 56px; max-width: 168px; text-overflow: ellipsis; overflow: hidden; word-break: break-word;">
                                                                 <a class="cell-question-link-text"
                                                                     style="text-decoration: underline; color: #52525B !important; font-weight: 400; font-size: 14px; max-width: 150px; text-overflow: ellipsis; max-height: 35px;"
                                                                     href="#">Coconut Latte with Oreo cookies</a>
@@ -2545,7 +2549,7 @@
                                             </div>
                                         </td>
                                         <td class="dashed-table-cell one left-dashed-border-md no-left-border-sm"
-                                            style="padding-top: 8px; padding-left: 12px; padding-right: 12px; padding-bottom: 12px; width: 33.33333%; width: 50%; border-bottom: 2px dashed #D4D4D8; max-width: 188px; display: inline-block; vertical-align: top; text-align: center; max-height: 175px;">
+                                            style="padding-top: 8px; padding-left: 12px; padding-right: 12px; padding-bottom: 12px; width: 33.33333%; width: 50%; border-bottom: 2px dashed #D4D4D8; max-width: 186.5px; display: inline-block; vertical-align: top; text-align: center; height: 166.5px;">
                                             <div>
                                                 <table>
                                                     <tr>
@@ -2606,7 +2610,7 @@
                                                                 style="text-decoration: underline; color: #52525B !important; font-weight: 400; font-size: 14px; max-width: 150px; text-overflow: ellipsis; max-height: 35px;"
                                                                 href="#">
                                                                 <p class="cell-question-link"
-                                                                    style="width: 100%; background: #FAFAFA; text-align: center; padding: 8px; border-radius: 2px; margin-top: 2px; margin-bottom: 0; max-height: 56px; max-width: 177px; text-overflow: ellipsis; overflow: hidden; word-break: break-word;">
+                                                                    style="width: 100%; background: #FAFAFA; text-align: center; padding: 8px; border-radius: 2px; margin-top: 2px; margin-bottom: 0; max-height: 56px; max-width: 168px; text-overflow: ellipsis; overflow: hidden; word-break: break-word;">
                                                                     How to sell additional dishes to guests
                                                                 </p>
                                                             </a>
